@@ -32,11 +32,10 @@ export function OnlineRound() {
               </ul>
             </div>
 
+            <div id="template" className="h-fit scroll-mt-24">
             <Reveal
               delay={120}
-              id="template"
-              as="div"
-              className="border-border/70 bg-background/40 h-fit scroll-mt-24 rounded-md border p-6"
+              className="border-border/70 bg-background/40 rounded-md border p-6"
             >
               <p className="text-eyebrow flex items-center gap-2">
                 <FileText className="text-primary h-3.5 w-3.5" aria-hidden="true" />
@@ -64,6 +63,7 @@ export function OnlineRound() {
                 </p>
               )}
             </Reveal>
+            </div>
           </div>
         </div>
       </div>
