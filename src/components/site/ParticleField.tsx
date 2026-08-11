@@ -18,13 +18,15 @@ export function ParticleField({ density = 0.00008 }: { density?: number }) {
     let height = 0;
     let raf = 0;
     let running = true;
-    const dpr = Math.min(window.devicePixelRatio || 1, 2);
+    const dpr = Math.min(window.devicePixelRatio || 1, 1.5);
+    const compact = window.innerWidth < 768;
 
     type P = { x: number; y: number; vx: number; vy: number };
     let points: P[] = [];
 
     const seed = () => {
-      const count = Math.min(90, Math.max(24, Math.floor(width * height * density)));
+      const max = compact ? 34 : 60;
+      const count = Math.min(max, Math.max(18, Math.floor(width * height * density)));
       points = Array.from({ length: count }, () => ({
         x: Math.random() * width,
         y: Math.random() * height,
@@ -32,6 +34,7 @@ export function ParticleField({ density = 0.00008 }: { density?: number }) {
         vy: (Math.random() - 0.5) * 0.18,
       }));
     };
+
 
     const resize = () => {
       const parent = canvas.parentElement;
