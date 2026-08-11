@@ -19,7 +19,7 @@ function initials(name: string) {
 
 export function Coordinators() {
   return (
-    <section id="coordinators" className="relative scroll-mt-24 py-24 sm:py-32">
+    <section id="coordinators" className="relative scroll-mt-24 py-16 sm:py-20">
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
         <SectionHeading
           eyebrow="Organizing team"
