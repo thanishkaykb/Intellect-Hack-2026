@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
-import { NAV_ITEMS, PRIMARY_REGISTER_URL } from "@/data/event";
+import { NAV_ITEMS } from "@/data/event";
 import { cn } from "@/lib/utils";
 import { Cta } from "./Cta";
 
@@ -57,7 +57,7 @@ export function Navbar() {
         </ul>
 
         <div className="flex items-center gap-3">
-          <Cta href={PRIMARY_REGISTER_URL} className="hidden sm:inline-flex">
+          <Cta href="#register" className="hidden sm:inline-flex">
             Register Now
           </Cta>
           <button
@@ -91,7 +91,7 @@ export function Navbar() {
             </li>
           ))}
           <li className="pt-5">
-            <Cta href={PRIMARY_REGISTER_URL} className="w-full" size="lg">
+            <Cta href="#register" className="w-full" size="lg">
               Register Now
             </Cta>
           </li>
