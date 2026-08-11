@@ -215,19 +215,72 @@ export const STAFF_COORDINATOR = {
 };
 
 /** Phone numbers are placeholders until official numbers are provided. */
-export const STUDENT_COORDINATORS = [
+/**
+ * Student coordinators.
+ * `phone` is a placeholder until official numbers are provided.
+ * `photo` accepts an imported image or a public path (e.g. "/images/name.jpg").
+ * Leave it empty to show the monogram fallback.
+ */
+export type Coordinator = {
+  name: string;
+  year: string;
+  department: string;
+  roles: string[];
+  phone: string;
+  photo?: string;
+};
+
+export const STUDENT_COORDINATORS: Coordinator[] = [
   {
     name: "Thanishka Yogesh",
-    year: "II CSE",
+    year: "II Year",
+    department: "CSE",
     roles: ["Design", "MC & Song", "Volunteer Management"],
     phone: PHONE_PLACEHOLDER,
+    photo: "",
   },
-  { name: "Surya", year: "II CSBS", roles: ["Event Management"], phone: PHONE_PLACEHOLDER },
-  { name: "Gokulkumar V", year: "II CSE", roles: ["Technical Team"], phone: PHONE_PLACEHOLDER },
-  { name: "Shabir S", year: "II CSE", roles: ["Technical Team"], phone: PHONE_PLACEHOLDER },
-  { name: "Ramya S", year: "III ECE", roles: ["Design"], phone: PHONE_PLACEHOLDER },
-  { name: "Madhesh R", year: "IV CSBS", roles: ["Event Management"], phone: PHONE_PLACEHOLDER },
+  {
+    name: "Surya",
+    year: "II Year",
+    department: "CSBS",
+    roles: ["Event Management"],
+    phone: PHONE_PLACEHOLDER,
+    photo: "",
+  },
+  {
+    name: "Gokulkumar V",
+    year: "II Year",
+    department: "CSE",
+    roles: ["Technical Team"],
+    phone: PHONE_PLACEHOLDER,
+    photo: "",
+  },
+  {
+    name: "Shabir S",
+    year: "II Year",
+    department: "CSE",
+    roles: ["Technical Team"],
+    phone: PHONE_PLACEHOLDER,
+    photo: "",
+  },
+  {
+    name: "Ramya S",
+    year: "III Year",
+    department: "ECE",
+    roles: ["Design"],
+    phone: PHONE_PLACEHOLDER,
+    photo: "",
+  },
+  {
+    name: "Madhesh R",
+    year: "IV Year",
+    department: "CSBS",
+    roles: ["Event Management"],
+    phone: PHONE_PLACEHOLDER,
+    photo: "",
+  },
 ];
+
 
 export const TEAM_ASSIGNMENTS = [
   { role: "Event Management", members: "Surya, Madhesh" },
