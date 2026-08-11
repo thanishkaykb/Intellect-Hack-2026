@@ -9,9 +9,7 @@ import { OnlineRound } from "@/components/site/OnlineRound";
 import { ProblemStatements } from "@/components/site/ProblemStatements";
 import { OfflineRound } from "@/components/site/OfflineRound";
 import { EvaluationCriteria } from "@/components/site/EvaluationCriteria";
-import { ObjectivesOutcomes } from "@/components/site/ObjectivesOutcomes";
 import { Prizes } from "@/components/site/Prizes";
-import { JuryValedictory } from "@/components/site/JuryValedictory";
 import { Registration } from "@/components/site/Registration";
 import { FAQ } from "@/components/site/FAQ";
 import { Coordinators } from "@/components/site/Coordinators";
@@ -80,9 +78,7 @@ function Index() {
         <ProblemStatements />
         <OfflineRound />
         <EvaluationCriteria />
-        <ObjectivesOutcomes />
         <Prizes />
-        <JuryValedictory />
         <Registration />
         <FAQ />
         <Coordinators />

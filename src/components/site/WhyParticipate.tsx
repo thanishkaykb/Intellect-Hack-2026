@@ -7,7 +7,7 @@ const ICONS = { Hammer, Lightbulb, Users, Presentation, Cpu, Award };
 
 export function WhyParticipate() {
   return (
-    <section className="relative py-24 sm:py-28">
+    <section className="relative py-16 sm:py-20">
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
         <SectionHeading eyebrow="Why participate" title="Why Intellect Hack?" align="center" />
         <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">

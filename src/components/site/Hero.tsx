@@ -1,5 +1,5 @@
 import { ArrowDown, CalendarDays, MapPin } from "lucide-react";
-import { EVENT, PRIMARY_REGISTER_URL } from "@/data/event";
+import { EVENT } from "@/data/event";
 import { Cta } from "./Cta";
 import { ParticleField } from "./ParticleField";
 
@@ -7,7 +7,7 @@ export function Hero() {
   return (
     <section
       id="home"
-      className="grain-overlay relative flex min-h-[100svh] items-center overflow-hidden pt-28 pb-20"
+      className="grain-overlay relative flex min-h-[88svh] items-center overflow-hidden pt-24 pb-16"
     >
       <ParticleField />
       <div
@@ -22,19 +22,19 @@ export function Hero() {
             {EVENT.organizer}
           </div>
 
-          <h1 className="mt-8 text-[clamp(2.4rem,9vw,6.5rem)] leading-[0.92] font-bold tracking-[-0.03em]">
+          <h1 className="mt-7 text-[clamp(2.1rem,7.5vw,4.8rem)] leading-[0.92] font-bold tracking-[-0.03em]">
             <span className="text-gradient-ember block">INTELLECT</span>
             <span className="block">
               HACK <span className="text-primary">2026</span>
             </span>
           </h1>
 
-          <p className="text-foreground/80 mt-6 font-mono text-[0.8rem] tracking-[0.32em] uppercase sm:text-sm">
+          <p className="text-foreground/80 mt-5 font-mono text-[0.72rem] tracking-[0.32em] uppercase sm:text-sm">
             {EVENT.tagline}
           </p>
-          <p className="text-muted-foreground mt-4 text-lg sm:text-xl">{EVENT.motto}</p>
+          <p className="text-muted-foreground mt-3 text-base sm:text-lg">{EVENT.motto}</p>
 
-          <dl className="text-muted-foreground mt-10 flex flex-col items-center justify-center gap-3 text-xs tracking-[0.18em] uppercase sm:flex-row sm:gap-8 sm:text-[0.8rem]">
+          <dl className="text-muted-foreground mt-8 flex flex-col items-center justify-center gap-3 text-xs tracking-[0.18em] uppercase sm:flex-row sm:gap-8 sm:text-[0.8rem]">
             <div className="flex items-center gap-2">
               <CalendarDays className="text-primary h-4 w-4" aria-hidden="true" />
               <dt className="sr-only">Date</dt>
@@ -50,8 +50,8 @@ export function Hero() {
             </div>
           </dl>
 
-          <div className="mt-11 flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <Cta href={PRIMARY_REGISTER_URL} size="lg" className="w-full sm:w-auto">
+          <div className="mt-9 flex flex-col items-center justify-center gap-4 sm:flex-row">
+            <Cta href="#register" size="lg" className="w-full sm:w-auto">
               Register Now
             </Cta>
             <Cta href="#about" variant="outline" size="lg" className="w-full sm:w-auto">
