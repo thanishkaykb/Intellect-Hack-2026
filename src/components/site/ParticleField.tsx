@@ -48,8 +48,18 @@ export function ParticleField({ density = 0.00008 }: { density?: number }) {
       seed();
     };
 
-    const draw = () => {
+    const LINK = 130;
+    const LINK_SQ = LINK * LINK;
+    let last = 0;
+
+    const draw = (now = 0) => {
+      if (running && !reduced) raf = requestAnimationFrame(draw);
+      // Cap to ~30fps: plenty for a subtle field, half the CPU.
+      if (!reduced && now - last < 33) return;
+      last = now;
+
       ctx.clearRect(0, 0, width, height);
+      ctx.fillStyle = "rgba(228, 132, 128, 0.45)";
       for (const p of points) {
         if (!reduced) {
           p.x += p.vx;
@@ -59,29 +69,27 @@ export function ParticleField({ density = 0.00008 }: { density?: number }) {
         }
         ctx.beginPath();
         ctx.arc(p.x, p.y, 1.1, 0, Math.PI * 2);
-        ctx.fillStyle = "rgba(228, 132, 128, 0.45)";
         ctx.fill();
       }
+      ctx.lineWidth = 0.6;
       for (let i = 0; i < points.length; i++) {
         const a = points[i]!;
         for (let j = i + 1; j < points.length; j++) {
           const b = points[j]!;
           const dx = a.x - b.x;
           const dy = a.y - b.y;
-          const dist = Math.hypot(dx, dy);
-          if (dist < 130) {
+          const d2 = dx * dx + dy * dy;
+          if (d2 < LINK_SQ) {
             ctx.beginPath();
             ctx.moveTo(a.x, a.y);
             ctx.lineTo(b.x, b.y);
-            ctx.strokeStyle = `rgba(190, 60, 60, ${(1 - dist / 130) * 0.22})`;
-            ctx.lineWidth = 0.6;
+            ctx.strokeStyle = `rgba(190, 60, 60, ${(1 - Math.sqrt(d2) / LINK) * 0.22})`;
             ctx.stroke();
           }
         }
       }
-
-      if (running && !reduced) raf = requestAnimationFrame(draw);
     };
+
 
     resize();
     draw();
