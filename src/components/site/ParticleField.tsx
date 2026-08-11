@@ -60,20 +60,23 @@ export function ParticleField({ density = 0.00008 }: { density?: number }) {
         ctx.fill();
       }
       for (let i = 0; i < points.length; i++) {
+        const a = points[i]!;
         for (let j = i + 1; j < points.length; j++) {
-          const dx = points[i].x - points[j].x;
-          const dy = points[i].y - points[j].y;
+          const b = points[j]!;
+          const dx = a.x - b.x;
+          const dy = a.y - b.y;
           const dist = Math.hypot(dx, dy);
           if (dist < 130) {
             ctx.beginPath();
-            ctx.moveTo(points[i].x, points[i].y);
-            ctx.lineTo(points[j].x, points[j].y);
+            ctx.moveTo(a.x, a.y);
+            ctx.lineTo(b.x, b.y);
             ctx.strokeStyle = `rgba(190, 60, 60, ${(1 - dist / 130) * 0.22})`;
             ctx.lineWidth = 0.6;
             ctx.stroke();
           }
         }
       }
+
       if (running && !reduced) raf = requestAnimationFrame(draw);
     };
 
