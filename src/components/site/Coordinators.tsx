@@ -3,7 +3,6 @@ import {
   PHONE_PLACEHOLDER,
   STAFF_COORDINATOR,
   STUDENT_COORDINATORS,
-  TEAM_ASSIGNMENTS,
 } from "@/data/event";
 import { Reveal } from "./Reveal";
 import { SectionHeading } from "./SectionHeading";
@@ -107,22 +106,6 @@ export function Coordinators() {
           ))}
         </ul>
 
-        {/* Team assignments */}
-        <Reveal delay={120} className="mt-14">
-          <div className="glass-panel rounded-lg p-7 sm:p-9">
-            <p className="text-eyebrow">Team Responsibilities</p>
-            <dl className="mt-6 grid gap-x-8 gap-y-4 sm:grid-cols-2 lg:grid-cols-3">
-              {TEAM_ASSIGNMENTS.map((t) => (
-                <div key={t.role} className="border-border/50 border-b pb-3">
-                  <dt className="text-primary/90 font-mono text-[0.7rem] tracking-[0.16em] uppercase">
-                    {t.role}
-                  </dt>
-                  <dd className="text-foreground/90 mt-1.5 text-sm">{t.members}</dd>
-                </div>
-              ))}
-            </dl>
-          </div>
-        </Reveal>
       </div>
     </section>
   );

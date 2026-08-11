@@ -7,7 +7,7 @@ const ICONS = [Trophy, Medal, Award];
 
 export function Prizes() {
   return (
-    <section id="prizes" className="relative scroll-mt-24 py-24 sm:py-32">
+    <section id="prizes" className="relative scroll-mt-24 py-16 sm:py-20">
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
         <SectionHeading
           eyebrow="Rewards"
@@ -16,7 +16,7 @@ export function Prizes() {
           align="center"
         />
 
-        <div className="mt-16 grid gap-6 lg:grid-cols-3 lg:items-end">
+        <div className="mt-10 grid gap-4 sm:grid-cols-3">
           {PRIZES.map((prize, i) => {
             const Icon = ICONS[i] ?? Award;
             const isWinner = prize.rank === 1;
@@ -25,8 +25,8 @@ export function Prizes() {
                 <article
                   className={
                     isWinner
-                      ? "grain-overlay relative overflow-hidden rounded-lg border border-primary/60 bg-[image:var(--gradient-wine)] p-9 text-center shadow-[0_40px_100px_-50px_oklch(0.6_0.22_22)] lg:-mt-8 lg:p-11"
-                      : "border-border/70 bg-surface/40 relative h-full overflow-hidden rounded-lg border p-9 text-center backdrop-blur-sm transition-all duration-500 hover:-translate-y-1 hover:border-primary/50"
+                      ? "grain-overlay relative overflow-hidden rounded-lg border border-primary/60 bg-[image:var(--gradient-wine)] p-6 text-center shadow-[0_30px_80px_-50px_oklch(0.6_0.22_22)]"
+                      : "border-border/70 bg-surface/40 relative h-full overflow-hidden rounded-lg border p-6 text-center backdrop-blur-sm transition-all duration-500 hover:-translate-y-1 hover:border-primary/50"
                   }
                 >
                   {isWinner && (
@@ -37,15 +37,15 @@ export function Prizes() {
                   )}
                   <div className="relative">
                     <Icon
-                      className={isWinner ? "mx-auto h-9 w-9 text-ember" : "text-primary mx-auto h-7 w-7"}
+                      className={isWinner ? "mx-auto h-6 w-6 text-ember" : "text-primary mx-auto h-5 w-5"}
                       aria-hidden="true"
                     />
-                    <p className="text-eyebrow mt-6">{prize.place}</p>
+                    <p className="text-eyebrow mt-4">{prize.place}</p>
                     <p
                       className={
                         isWinner
-                          ? "font-display text-gradient-ember mt-4 text-5xl font-bold sm:text-6xl"
-                          : "font-display mt-4 text-4xl font-bold sm:text-5xl"
+                          ? "font-display text-gradient-ember mt-2 text-3xl font-bold sm:text-4xl"
+                          : "font-display mt-2 text-2xl font-bold sm:text-3xl"
                       }
                     >
                       {prize.amount}
@@ -57,7 +57,7 @@ export function Prizes() {
           })}
         </div>
 
-        <Reveal delay={120} className="mt-10 text-center">
+        <Reveal delay={120} className="mt-6 text-center">
           <p className="text-muted-foreground text-sm tracking-wide">
             Certificates will be provided.
           </p>
