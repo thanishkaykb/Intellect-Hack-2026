@@ -4,7 +4,7 @@ export function Footer() {
   return (
     <footer className="border-border/60 relative border-t py-7">
       <div className="relative mx-auto max-w-7xl px-5 lg:px-8">
-        <div className="grid gap-5 md:grid-cols-[auto_minmax(0,1fr)] md:items-center">
+        <div className="flex flex-col items-center gap-5 text-center">
           <div className="flex items-center gap-3">
             <span className="bg-primary/80 block h-5 w-[3px] shrink-0 rounded-full shadow-[0_0_20px_2px_oklch(0.56_0.2_20/70%)]" />
             <span className="font-display text-xs font-semibold tracking-[0.18em] uppercase">
@@ -12,8 +12,8 @@ export function Footer() {
             </span>
           </div>
 
-          <nav aria-label="Footer" className="md:justify-self-end">
-            <ul className="flex flex-wrap gap-x-4 gap-y-1.5 md:justify-end">
+          <nav aria-label="Footer" className="w-full">
+            <ul className="flex flex-wrap justify-center gap-x-5 gap-y-2">
               {FOOTER_LINKS.map((link) => (
                 <li key={link.label}>
                   <a
