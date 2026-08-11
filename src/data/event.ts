@@ -12,12 +12,11 @@ export const GOOGLE_FORM_URL = ""; // TODO: add official Google Form URL
 
 /** Official registration platform links. */
 export const REGISTRATION_LINKS = {
-  unstop: "", // TODO: add official Unstop URL
-  devfolio: "", // TODO: add official Devfolio URL
+  gform: GOOGLE_FORM_URL, // registration + PPT submission happen on the same Google Form
 };
 
 /** Primary "Register Now" destination (falls back to the registration section). */
-export const PRIMARY_REGISTER_URL = REGISTRATION_LINKS.unstop || "#register";
+export const PRIMARY_REGISTER_URL = "#register";
 
 export const PHONE_PLACEHOLDER = "+91 XXXXX XXXXX";
 
@@ -28,6 +27,7 @@ export const EVENT = {
   organizer: "IEEE Reliability Society • SEC SBC",
   date: "25 SEPTEMBER 2026",
   venue: "APPLE HALL",
+  location: "SRI SAIRAM ENGINEERING COLLEGE, CHENNAI",
   college: "SRI SAIRAM ENGINEERING COLLEGE, CHENNAI",
   duration: "6 Hours",
   teamSize: "2–4 Members per Team",
@@ -40,8 +40,8 @@ export const NAV_ITEMS = [
   { label: "About", href: "#about" },
   { label: "Timeline", href: "#timeline" },
   { label: "Problem Statements", href: "#problems" },
-  { label: "How It Works", href: "#finale" },
-  { label: "Evaluation", href: "#evaluation" },
+  { label: "Grand Finale", href: "#finale" },
+  { label: "Prizes", href: "#prizes" },
   { label: "FAQ", href: "#faq" },
   { label: "Coordinators", href: "#coordinators" },
 ];
@@ -218,7 +218,6 @@ export type Coordinator = {
   name: string;
   year: string;
   department: string;
-  roles: string[];
   phone: string;
   photo?: string;
 };
@@ -228,7 +227,6 @@ export const STUDENT_COORDINATORS: Coordinator[] = [
     name: "Thanishka Yogesh",
     year: "II Year",
     department: "CSE",
-    roles: ["Design", "MC & Song", "Volunteer Management"],
     phone: "+91 90256 58705",
     photo: "",
   },
@@ -236,7 +234,6 @@ export const STUDENT_COORDINATORS: Coordinator[] = [
     name: "Surya",
     year: "II Year",
     department: "CSBS",
-    roles: ["Event Management"],
     phone: "+91 73389 27172",
     photo: "",
   },
@@ -244,7 +241,6 @@ export const STUDENT_COORDINATORS: Coordinator[] = [
     name: "Gokulkumar V",
     year: "II Year",
     department: "CSE",
-    roles: ["Technical Team"],
     phone: "+91 80561 66638",
     photo: "",
   },
@@ -252,7 +248,6 @@ export const STUDENT_COORDINATORS: Coordinator[] = [
     name: "Shabir S",
     year: "II Year",
     department: "CSE",
-    roles: ["Technical Team"],
     phone: "+91 73580 07571",
     photo: "",
   },
@@ -260,7 +255,6 @@ export const STUDENT_COORDINATORS: Coordinator[] = [
     name: "Ramya S",
     year: "III Year",
     department: "ECE",
-    roles: ["Design"],
     phone: "+91 63796 01275",
     photo: "",
   },
@@ -268,7 +262,6 @@ export const STUDENT_COORDINATORS: Coordinator[] = [
     name: "Madhesh R",
     year: "IV Year",
     department: "CSBS",
-    roles: ["Event Management"],
     phone: "+91 91763 70183",
     photo: "",
   },
@@ -300,7 +293,9 @@ export const FOOTER_LINKS = [
   { label: "About", href: "#about" },
   { label: "Timeline", href: "#timeline" },
   { label: "Problem Statements", href: "#problems" },
-  { label: "Evaluation", href: "#evaluation" },
+  { label: "Grand Finale", href: "#finale" },
+  { label: "Prizes", href: "#prizes" },
   { label: "FAQ", href: "#faq" },
+  { label: "Coordinators", href: "#coordinators" },
   { label: "Register", href: "#register" },
 ];
