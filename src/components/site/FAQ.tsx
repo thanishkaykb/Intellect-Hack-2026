@@ -10,7 +10,7 @@ import { SectionHeading } from "./SectionHeading";
 
 export function FAQ() {
   return (
-    <section id="faq" className="relative scroll-mt-28 py-12 sm:py-16">
+    <section id="faq" className="relative py-10 sm:py-14">
       <div className="mx-auto max-w-4xl px-5 lg:px-8">
         <SectionHeading
           eyebrow="FAQ"

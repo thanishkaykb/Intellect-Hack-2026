@@ -1,27 +1,29 @@
-import { ONLINE_ROUND_POINTS, SUBMISSION_STEPS } from "@/data/event";
+import { Download, FileText } from "lucide-react";
+import { ONLINE_ROUND_POINTS, PPT_TEMPLATE_URL } from "@/data/event";
+import { Cta } from "./Cta";
 import { Reveal } from "./Reveal";
 import { SectionHeading } from "./SectionHeading";
 
 export function OnlineRound() {
   return (
-    <section id="online-round" className="relative scroll-mt-28 py-12 sm:py-16">
+    <section id="online-round" className="relative py-10 sm:py-14">
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
-        <div className="glass-panel grain-overlay relative overflow-hidden rounded-lg p-8 sm:p-12 lg:p-16">
+        <div className="glass-panel grain-overlay relative overflow-hidden rounded-lg p-6 sm:p-10 lg:p-12">
           <div
             aria-hidden="true"
             className="absolute -top-32 -left-24 h-80 w-80 rounded-full bg-[radial-gradient(circle,oklch(0.45_0.17_18/32%),transparent_70%)] blur-2xl"
           />
-          <div className="relative grid gap-12 lg:grid-cols-2 lg:gap-16">
-            <div>
+          <div className="relative grid gap-10 lg:grid-cols-[1.35fr_1fr] lg:gap-14">
+            <div className="min-w-0">
               <SectionHeading
                 eyebrow="Phase I"
                 title="Online Preliminary Round"
                 description="11 September 2026 — 19 September 2026"
               />
-              <ul className="mt-8 space-y-4">
+              <ul className="mt-6 space-y-3.5">
                 {ONLINE_ROUND_POINTS.map((point, i) => (
-                  <Reveal as="li" key={point} delay={i * 70} className="flex gap-3 text-sm sm:text-base">
-                    <span aria-hidden="true" className="text-primary mt-1 font-mono text-xs">
+                  <Reveal as="li" key={point} delay={i * 60} className="flex gap-3 text-sm">
+                    <span aria-hidden="true" className="text-primary mt-0.5 font-mono text-xs">
                       {String(i + 1).padStart(2, "0")}
                     </span>
                     <span className="text-muted-foreground leading-relaxed">{point}</span>
@@ -30,19 +32,38 @@ export function OnlineRound() {
               </ul>
             </div>
 
-            <Reveal delay={140} className="border-border/70 bg-background/40 rounded-md border p-7">
-              <p className="text-eyebrow">Submission requirements</p>
-              <ol className="mt-5 space-y-3">
-                {SUBMISSION_STEPS.map((step, i) => (
-                  <li key={step} className="flex items-start gap-3 text-sm">
-                    <span className="border-primary/50 text-primary mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full border font-mono text-[0.65rem]">
-                      {i + 1}
-                    </span>
-                    <span className="text-foreground/85 leading-relaxed">{step}</span>
-                  </li>
-                ))}
-              </ol>
+            <div id="template" className="h-fit scroll-mt-24">
+            <Reveal
+              delay={120}
+              className="border-border/70 bg-background/40 rounded-md border p-6"
+            >
+              <p className="text-eyebrow flex items-center gap-2">
+                <FileText className="text-primary h-3.5 w-3.5" aria-hidden="true" />
+                Official PPT template
+              </p>
+              <h3 className="mt-3 text-lg font-semibold">Use this template only</h3>
+              <p className="text-muted-foreground mt-2 text-sm leading-relaxed">
+                All Phase I submissions must be prepared using the official Intellect Hack 2026
+                presentation template and submitted through the Google Form. Submissions in any
+                other format may not be evaluated.
+              </p>
+              <div className="mt-5">
+                <Cta
+                  href={PPT_TEMPLATE_URL || undefined}
+                  size="lg"
+                  className="w-full justify-center"
+                >
+                  <Download className="h-4 w-4" aria-hidden="true" />
+                  Download Template
+                </Cta>
+              </div>
+              {!PPT_TEMPLATE_URL && (
+                <p className="text-muted-foreground mt-3 text-xs">
+                  The template file will be published here shortly.
+                </p>
+              )}
             </Reveal>
+            </div>
           </div>
         </div>
       </div>

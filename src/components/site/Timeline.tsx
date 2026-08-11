@@ -4,7 +4,7 @@ import { SectionHeading } from "./SectionHeading";
 
 export function Timeline() {
   return (
-    <section id="timeline" className="relative scroll-mt-28 py-12 sm:py-16">
+    <section id="timeline" className="relative py-10 sm:py-14">
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
         <SectionHeading
           eyebrow="Timeline"

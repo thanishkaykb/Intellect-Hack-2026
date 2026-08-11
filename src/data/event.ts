@@ -134,21 +134,16 @@ export const TIMELINE = [
 ];
 
 export const ONLINE_ROUND_POINTS = [
-  "Participants may choose any ONE of the five predefined problem statements.",
-  "The problem statements will be provided through a Google Form.",
-  "Each team must submit a PowerPoint presentation explaining their proposed solution.",
-  "The jury panel will evaluate the submissions based on the specified evaluation criteria.",
+  "Five predefined problem statements are listed on this website and will also be shared inside the Google Form.",
+  "Each team must select any ONE problem statement to work on.",
+  "Prepare a PowerPoint presentation for the selected problem statement covering problem understanding, proposed solution, methodology, feasibility and expected outcomes.",
+  "The presentation must strictly follow the official Intellect Hack 2026 PPT template provided on this website.",
+  "Submit the completed presentation through the official Google Form before 19 September 2026.",
+  "The jury panel will evaluate all submissions and shortlisted teams will be informed through email.",
 ];
 
-export const SUBMISSION_STEPS = [
-  "Select one problem statement.",
-  "Understand the problem clearly.",
-  "Propose an AI-based solution.",
-  "Explain the methodology.",
-  "Explain feasibility.",
-  "Describe expected outcomes.",
-  "Submit the PowerPoint presentation before the deadline.",
-];
+/** Official PPT template for the online round. Add the file link here. */
+export const PPT_TEMPLATE_URL = ""; // TODO: add official PPT template link
 
 export const PROBLEM_STATEMENTS = [
   {
@@ -280,7 +275,11 @@ export const FAQS = [
   },
   {
     q: "How do we submit for the first round?",
-    a: "Submit your idea as a PowerPoint presentation (PPT) through the official Google Form.",
+    a: "Choose one problem statement, prepare your presentation using the official Intellect Hack 2026 PPT template available on this website, and submit it through the official Google Form.",
+  },
+  {
+    q: "Is there a fixed PPT template?",
+    a: "Yes. Presentations must be made using the official template provided in the PPT Template section of this website. Submissions in any other format may not be evaluated.",
   },
   {
     q: "When will shortlisted teams be announced?",
@@ -293,6 +292,7 @@ export const FOOTER_LINKS = [
   { label: "About", href: "#about" },
   { label: "Timeline", href: "#timeline" },
   { label: "Problem Statements", href: "#problems" },
+  { label: "PPT Template", href: "#template" },
   { label: "Grand Finale", href: "#finale" },
   { label: "Prizes", href: "#prizes" },
   { label: "FAQ", href: "#faq" },
