@@ -31,7 +31,7 @@ export const EVENT = {
   college: "SRI SAIRAM ENGINEERING COLLEGE, CHENNAI",
   duration: "6 Hours",
   teamSize: "2–4 Members per Team",
-  fee: "₹200 per Team",
+  fee: "₹200 per Team (if selected)",
   eligibility: "Students from 2nd and 3rd year departments",
 };
 
@@ -52,7 +52,7 @@ export const EVENT_FACTS = [
   { label: "DATE", value: "25 September 2026" },
   { label: "VENUE", value: "Apple Hall" },
   { label: "TEAM SIZE", value: "2–4 Members per Team" },
-  { label: "REGISTRATION FEE", value: "₹200 per Team" },
+  { label: "REGISTRATION FEE", value: "₹200 per Team (if selected)" },
   { label: "ELIGIBILITY", value: "Students from 2nd and 3rd year departments" },
   { label: "EVENT TYPE", value: "Inter-College Event" },
 ];
@@ -151,11 +151,36 @@ export const SUBMISSION_STEPS = [
 ];
 
 export const PROBLEM_STATEMENTS = [
-  { no: "01", title: "Autonomous AI for Critical Infrastructure" },
-  { no: "02", title: "AI Against Misinformation & Digital Trust" },
-  { no: "03", title: "Human-AI Collaboration for Scientific Discovery" },
-  { no: "04", title: "AI for Space & Earth Intelligence" },
-  { no: "05", title: "Open Innovation" },
+  {
+    no: "01",
+    title: "Autonomous AI for Critical Infrastructure",
+    description:
+      "Build AI systems that can monitor, predict and protect critical infrastructure such as power grids, water networks, transport systems or industrial plants. Solutions may focus on predictive maintenance, fault detection, reliability analysis or autonomous decision support that keeps essential services running safely.",
+  },
+  {
+    no: "02",
+    title: "AI Against Misinformation & Digital Trust",
+    description:
+      "Design AI solutions that detect fake news, manipulated media, deepfakes or coordinated online manipulation. Solutions may focus on content verification, source credibility scoring, explainable detection or tools that help everyday users judge what is trustworthy online.",
+  },
+  {
+    no: "03",
+    title: "Human-AI Collaboration for Scientific Discovery",
+    description:
+      "Create AI tools that work alongside researchers to accelerate discovery — literature analysis, hypothesis generation, experiment design, simulation or data interpretation across fields like medicine, materials, biology or climate science.",
+  },
+  {
+    no: "04",
+    title: "AI for Space & Earth Intelligence",
+    description:
+      "Use AI on satellite imagery, remote sensing or space mission data to solve real problems: disaster response, crop and forest monitoring, urban growth, climate tracking, orbital debris analysis or autonomous spacecraft operations.",
+  },
+  {
+    no: "05",
+    title: "Open Innovation",
+    description:
+      "No fixed theme. Identify any real-world problem you care about and solve it with AI. Your idea will be judged on originality, clarity of the problem, technical depth, feasibility and the impact your solution can create.",
+  },
 ];
 
 export const EVALUATION_CRITERIA = [
@@ -169,43 +194,11 @@ export const EVALUATION_CRITERIA = [
   "Presentation & Demonstration",
 ];
 
-export const OBJECTIVES = [
-  { text: "Encourage students to develop innovative AI solutions.", icon: "Sparkles" },
-  { text: "Promote teamwork and collaborative learning.", icon: "Users" },
-  { text: "Enhance practical knowledge in Artificial Intelligence.", icon: "BrainCircuit" },
-  { text: "Solve real-world challenges through technology.", icon: "Globe2" },
-  {
-    text: "Foster creativity, ethical AI practices and research-oriented thinking.",
-    icon: "ShieldCheck",
-  },
-] as const;
-
-export const OUTCOMES = [
-  "Development of innovative AI-based prototypes",
-  "Improved technical and analytical skills",
-  "Better teamwork and communication abilities",
-  "Exposure to real-world AI applications",
-  "Encouragement towards research, innovation and entrepreneurship",
-  "Improved problem-solving and presentation skills",
-  "Exposure to industry-relevant AI tools and technologies",
-  "Encouragement of creativity, innovation and ethical AI development",
-  "Interdisciplinary collaboration and research-oriented thinking",
-];
-
 export const PRIZES = [
   { place: "WINNER", amount: "₹1,500", rank: 1 },
   { place: "RUNNER-UP", amount: "₹1,000", rank: 2 },
   { place: "SECOND RUNNER-UP", amount: "₹750", rank: 3 },
 ];
-
-export const VALEDICTORY = [
-  "Announcement of Winners",
-  "Prize Distribution",
-  "Certificate Distribution",
-  "Vote of Thanks",
-];
-
-export const JURY = ["IEEE SCOPE Members", "Faculty Members from Multiple Departments"];
 
 export const STAFF_COORDINATOR = {
   name: "Mr. D. Prabhu",
@@ -236,7 +229,7 @@ export const STUDENT_COORDINATORS: Coordinator[] = [
     year: "II Year",
     department: "CSE",
     roles: ["Design", "MC & Song", "Volunteer Management"],
-    phone: PHONE_PLACEHOLDER,
+    phone: "+91 90256 58705",
     photo: "",
   },
   {
@@ -244,7 +237,7 @@ export const STUDENT_COORDINATORS: Coordinator[] = [
     year: "II Year",
     department: "CSBS",
     roles: ["Event Management"],
-    phone: PHONE_PLACEHOLDER,
+    phone: "+91 73389 27172",
     photo: "",
   },
   {
@@ -252,7 +245,7 @@ export const STUDENT_COORDINATORS: Coordinator[] = [
     year: "II Year",
     department: "CSE",
     roles: ["Technical Team"],
-    phone: PHONE_PLACEHOLDER,
+    phone: "+91 80561 66638",
     photo: "",
   },
   {
@@ -260,7 +253,7 @@ export const STUDENT_COORDINATORS: Coordinator[] = [
     year: "II Year",
     department: "CSE",
     roles: ["Technical Team"],
-    phone: PHONE_PLACEHOLDER,
+    phone: "+91 73580 07571",
     photo: "",
   },
   {
@@ -268,7 +261,7 @@ export const STUDENT_COORDINATORS: Coordinator[] = [
     year: "III Year",
     department: "ECE",
     roles: ["Design"],
-    phone: PHONE_PLACEHOLDER,
+    phone: "+91 63796 01275",
     photo: "",
   },
   {
@@ -276,70 +269,29 @@ export const STUDENT_COORDINATORS: Coordinator[] = [
     year: "IV Year",
     department: "CSBS",
     roles: ["Event Management"],
-    phone: PHONE_PLACEHOLDER,
+    phone: "+91 91763 70183",
     photo: "",
   },
 ];
 
 
-export const TEAM_ASSIGNMENTS = [
-  { role: "Event Management", members: "Surya, Madhesh" },
-  { role: "Design", members: "Ramya, Thanishka Yogesh" },
-  { role: "Technical Team", members: "Shabir, Gokulkumar" },
-  { role: "Food & Guest Management", members: "Ramani" },
-  { role: "MC & Song", members: "Thanishka Yogesh, Bhavana" },
-  { role: "Volunteer Management", members: "Thanishka Yogesh" },
-  { role: "Registration Desk", members: "Sahithya" },
-];
-
 export const FAQS = [
   {
     q: "Who can participate?",
-    a: "Students from 2nd and 3rd year departments can participate. The event is an inter-college competition.",
+    a: "Students from 2nd and 3rd year departments. Intellect Hack 2026 is an inter-college competition.",
   },
   { q: "How many members can be in a team?", a: "Each team must have 2–4 members." },
-  { q: "What is the registration fee?", a: "The registration fee is ₹200 per team." },
   {
-    q: "Is there an online preliminary round?",
-    a: "Yes. The online preliminary round begins on 11 September 2026.",
+    q: "What is the registration fee?",
+    a: "₹200 per team, payable only if your team is selected for the offline round.",
   },
   {
-    q: "What do we submit in the online round?",
-    a: "Teams must submit a PowerPoint presentation explaining their problem understanding, proposed solution, methodology, feasibility and expected outcomes.",
-  },
-  {
-    q: "Where will the online problem statements be provided?",
-    a: "The five predefined problem statements will be circulated through a Google Form.",
-  },
-  {
-    q: "Can we choose any problem statement?",
-    a: "Yes. Each team may choose any ONE of the five predefined problem statements.",
-  },
-  {
-    q: "When is the submission deadline?",
-    a: "The PowerPoint submission deadline is 19 September 2026.",
+    q: "How do we submit for the first round?",
+    a: "Submit your idea as a PowerPoint presentation (PPT) through the official Google Form.",
   },
   {
     q: "When will shortlisted teams be announced?",
-    a: "Shortlisted teams will be announced before or on 23 September 2026, with communication sent through email.",
-  },
-  { q: "When is the offline round?", a: "The offline grand finale takes place on 25 September 2026." },
-  {
-    q: "Where is the offline event?",
-    a: "The offline event will be conducted at Apple Hall, Sri Sairam Engineering College, Chennai.",
-  },
-  {
-    q: "Will the offline problem statement be given beforehand?",
-    a: "No. A new problem statement will be announced on the spot at the venue.",
-  },
-  { q: "How long is the offline event?", a: "The offline event duration is 6 hours." },
-  {
-    q: "What happens during the offline round?",
-    a: "The first half focuses on understanding the problem, preparing a solution concept and presenting it. The second half focuses on developing/refining the prototype and presenting a working demonstration followed by a Q&A session.",
-  },
-  {
-    q: "How will the winners be selected?",
-    a: "Winners will be selected based on the overall evaluation of the PowerPoint presentation and prototype demonstration.",
+    a: "Shortlisted teams will be announced on 23 September 2026 and informed through email.",
   },
 ];
 
