@@ -19,7 +19,7 @@ function initials(name: string) {
 
 export function Coordinators() {
   return (
-    <section id="coordinators" className="relative scroll-mt-24 py-16 sm:py-20">
+    <section id="coordinators" className="relative scroll-mt-28 py-12 sm:py-16">
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
         <SectionHeading
           eyebrow="Organizing team"
@@ -77,16 +77,6 @@ export function Coordinators() {
                   </div>
                 </div>
 
-                <div className="relative mt-5 flex flex-wrap gap-2">
-                  {c.roles.map((role) => (
-                    <span
-                      key={role}
-                      className="border-border/70 bg-background/40 text-foreground/80 rounded-full border px-3 py-1 text-[0.7rem] tracking-wide"
-                    >
-                      {role}
-                    </span>
-                  ))}
-                </div>
 
                 <div className="border-border/60 relative mt-6 flex items-center gap-2 border-t pt-4">
                   <Phone className="text-primary h-4 w-4" aria-hidden="true" />

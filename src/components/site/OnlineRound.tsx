@@ -1,12 +1,10 @@
-import { FileUp } from "lucide-react";
-import { GOOGLE_FORM_URL, ONLINE_ROUND_POINTS, SUBMISSION_STEPS } from "@/data/event";
-import { Cta } from "./Cta";
+import { ONLINE_ROUND_POINTS, SUBMISSION_STEPS } from "@/data/event";
 import { Reveal } from "./Reveal";
 import { SectionHeading } from "./SectionHeading";
 
 export function OnlineRound() {
   return (
-    <section id="online-round" className="relative scroll-mt-24 py-16 sm:py-20">
+    <section id="online-round" className="relative scroll-mt-28 py-12 sm:py-16">
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
         <div className="glass-panel grain-overlay relative overflow-hidden rounded-lg p-8 sm:p-12 lg:p-16">
           <div
@@ -44,17 +42,6 @@ export function OnlineRound() {
                   </li>
                 ))}
               </ol>
-              <div className="mt-8">
-                <Cta href={GOOGLE_FORM_URL || undefined} size="lg" className="w-full">
-                  <FileUp className="h-4 w-4" aria-hidden="true" />
-                  Submit your PPT
-                </Cta>
-                {!GOOGLE_FORM_URL && (
-                  <p className="text-muted-foreground mt-3 text-center text-xs">
-                    Submission link will be published here soon.
-                  </p>
-                )}
-              </div>
             </Reveal>
           </div>
         </div>

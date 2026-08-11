@@ -1,45 +1,12 @@
-import { Flame, Hourglass, Trophy } from "lucide-react";
+import { Trophy } from "lucide-react";
 import { Reveal } from "./Reveal";
 import { ParticleField } from "./ParticleField";
-
-const HALVES = [
-  {
-    label: "First Half — Ideate & Present",
-    icon: Hourglass,
-    items: [
-      "Understand the newly announced problem",
-      "Develop their solution concept",
-      "Prepare their PowerPoint presentation",
-      "Present their idea to the judges",
-    ],
-    footerLabel: "Evaluation focuses on",
-    footer: [
-      "Problem understanding",
-      "Innovation",
-      "Proposed approach",
-      "Feasibility",
-      "Clarity of presentation",
-    ],
-  },
-  {
-    label: "Second Half — Build & Demonstrate",
-    icon: Flame,
-    items: [
-      "Develop or refine their prototype",
-      "Demonstrate their working solution",
-      "Present the prototype to the judges",
-      "Participate in an interactive Question & Answer session",
-    ],
-    footerLabel: "Final evaluation",
-    footer: ["PowerPoint presentation", "Prototype demonstration"],
-  },
-];
 
 export function OfflineRound() {
   return (
     <section
       id="finale"
-      className="grain-overlay relative scroll-mt-24 overflow-hidden border-y border-border/60 bg-[image:var(--gradient-wine)] py-28 sm:py-36"
+      className="grain-overlay relative scroll-mt-28 overflow-hidden border-y border-border/60 bg-[image:var(--gradient-wine)] py-14 sm:py-20"
     >
       <ParticleField density={0.00005} />
       <div
@@ -70,36 +37,6 @@ export function OfflineRound() {
             <li>The topic will NOT be disclosed in advance.</li>
           </ul>
         </Reveal>
-
-        <div className="mt-10 grid gap-6 lg:grid-cols-2">
-          {HALVES.map((half, i) => (
-            <Reveal key={half.label} delay={140 + i * 120}>
-              <article className="border-border/70 bg-background/50 h-full rounded-md border p-7 backdrop-blur-md transition-shadow duration-500 hover:shadow-[0_30px_90px_-50px_oklch(0.6_0.22_22/95%)] sm:p-9">
-                <half.icon className="text-primary h-6 w-6" aria-hidden="true" />
-                <h3 className="mt-5 text-xl font-semibold sm:text-2xl">{half.label}</h3>
-                <ul className="mt-5 space-y-2.5">
-                  {half.items.map((item) => (
-                    <li key={item} className="text-muted-foreground flex gap-3 text-sm">
-                      <span aria-hidden="true" className="bg-primary mt-2 h-1 w-3 shrink-0" />
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-                <p className="text-eyebrow mt-7">{half.footerLabel}</p>
-                <div className="mt-3 flex flex-wrap gap-2">
-                  {half.footer.map((f) => (
-                    <span
-                      key={f}
-                      className="border-border/70 bg-surface/50 rounded-full border px-3 py-1.5 text-xs"
-                    >
-                      {f}
-                    </span>
-                  ))}
-                </div>
-              </article>
-            </Reveal>
-          ))}
-        </div>
 
         <Reveal delay={260} className="mt-10 text-center">
           <p className="text-muted-foreground inline-flex items-center gap-3 text-sm">

@@ -3,12 +3,10 @@ import { AmbientBackground } from "@/components/site/AmbientBackground";
 import { Navbar } from "@/components/site/Navbar";
 import { Hero } from "@/components/site/Hero";
 import { About } from "@/components/site/About";
-import { WhyParticipate } from "@/components/site/WhyParticipate";
 import { Timeline } from "@/components/site/Timeline";
 import { OnlineRound } from "@/components/site/OnlineRound";
 import { ProblemStatements } from "@/components/site/ProblemStatements";
 import { OfflineRound } from "@/components/site/OfflineRound";
-import { EvaluationCriteria } from "@/components/site/EvaluationCriteria";
 import { Prizes } from "@/components/site/Prizes";
 import { Registration } from "@/components/site/Registration";
 import { FAQ } from "@/components/site/FAQ";
@@ -72,12 +70,10 @@ function Index() {
       <main>
         <Hero />
         <About />
-        <WhyParticipate />
         <Timeline />
         <OnlineRound />
         <ProblemStatements />
         <OfflineRound />
-        <EvaluationCriteria />
         <Prizes />
         <Registration />
         <FAQ />
