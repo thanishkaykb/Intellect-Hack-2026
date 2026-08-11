@@ -292,6 +292,7 @@ export const FOOTER_LINKS = [
   { label: "About", href: "#about" },
   { label: "Timeline", href: "#timeline" },
   { label: "Problem Statements", href: "#problems" },
+  { label: "PPT Template", href: "#template" },
   { label: "Grand Finale", href: "#finale" },
   { label: "Prizes", href: "#prizes" },
   { label: "FAQ", href: "#faq" },
