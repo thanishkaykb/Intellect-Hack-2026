@@ -32,7 +32,7 @@ export function OnlineRound() {
               </ul>
             </div>
 
-            <div id="template" className="scroll-mt-24 lg:mt-auto lg:self-end lg:pb-2">
+            <div id="template" className="scroll-mt-24 lg:self-center lg:mt-12">
             <Reveal
               delay={120}
               className="border-border/70 bg-background/40 rounded-md border p-6"
