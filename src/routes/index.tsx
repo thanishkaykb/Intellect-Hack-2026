@@ -1,24 +1,93 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { AmbientBackground } from "@/components/site/AmbientBackground";
+import { Navbar } from "@/components/site/Navbar";
+import { Hero } from "@/components/site/Hero";
+import { About } from "@/components/site/About";
+import { WhyParticipate } from "@/components/site/WhyParticipate";
+import { Timeline } from "@/components/site/Timeline";
+import { OnlineRound } from "@/components/site/OnlineRound";
+import { ProblemStatements } from "@/components/site/ProblemStatements";
+import { OfflineRound } from "@/components/site/OfflineRound";
+import { EvaluationCriteria } from "@/components/site/EvaluationCriteria";
+import { ObjectivesOutcomes } from "@/components/site/ObjectivesOutcomes";
+import { Prizes } from "@/components/site/Prizes";
+import { JuryValedictory } from "@/components/site/JuryValedictory";
+import { Registration } from "@/components/site/Registration";
+import { FAQ } from "@/components/site/FAQ";
+import { Coordinators } from "@/components/site/Coordinators";
+import { Footer } from "@/components/site/Footer";
 
-// No head() here: the home route inherits title/description/og/twitter from
-// __root.tsx, and ships no og:image so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
+const TITLE = "Intellect Hack 2026 | AI Hackathon";
+const DESCRIPTION =
+  "Intellect Hack 2026 is an AI-focused inter-college competition organized by IEEE Reliability Society, SEC SBC at Sri Sairam Engineering College, Chennai.";
+
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title: TITLE },
+      { name: "description", content: DESCRIPTION },
+      { property: "og:title", content: TITLE },
+      { property: "og:description", content: DESCRIPTION },
+      { property: "og:type", content: "website" },
+      { property: "og:url", content: "/" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: TITLE },
+      { name: "twitter:description", content: DESCRIPTION },
+    ],
+    links: [{ rel: "canonical", href: "/" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Event",
+          name: "Intellect Hack 2026",
+          description: DESCRIPTION,
+          startDate: "2026-09-25",
+          eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+          eventStatus: "https://schema.org/EventScheduled",
+          location: {
+            "@type": "Place",
+            name: "Apple Hall, Sri Sairam Engineering College",
+            address: {
+              "@type": "PostalAddress",
+              addressLocality: "Chennai",
+              addressCountry: "IN",
+            },
+          },
+          organizer: {
+            "@type": "Organization",
+            name: "IEEE Reliability Society, SEC SBC",
+          },
+        }),
+      },
+    ],
+  }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
+    <div className="text-foreground min-h-screen">
+      <AmbientBackground />
+      <Navbar />
+      <main>
+        <Hero />
+        <About />
+        <WhyParticipate />
+        <Timeline />
+        <OnlineRound />
+        <ProblemStatements />
+        <OfflineRound />
+        <EvaluationCriteria />
+        <ObjectivesOutcomes />
+        <Prizes />
+        <JuryValedictory />
+        <Registration />
+        <FAQ />
+        <Coordinators />
+      </main>
+      <Footer />
     </div>
   );
 }
