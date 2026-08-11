@@ -12,9 +12,9 @@ export function AmbientBackground() {
           maskImage: "radial-gradient(ellipse at 50% 0%, black 10%, transparent 75%)",
         }}
       />
-      <div className="animate-drift absolute -top-40 -left-40 h-[42rem] w-[42rem] rounded-full bg-[radial-gradient(circle,oklch(0.45_0.16_18/45%),transparent_65%)] blur-3xl" />
+      <div className="animate-drift absolute -top-40 will-change-transform -left-40 h-[42rem] w-[42rem] rounded-full bg-[radial-gradient(circle,oklch(0.45_0.16_18/45%),transparent_65%)] blur-3xl" />
       <div className="animate-pulse-glow absolute top-1/3 -right-52 h-[38rem] w-[38rem] rounded-full bg-[radial-gradient(circle,oklch(0.38_0.14_12/40%),transparent_65%)] blur-3xl" />
-      <div className="absolute bottom-0 left-1/4 h-[30rem] w-[30rem] rounded-full bg-[radial-gradient(circle,oklch(0.32_0.12_20/35%),transparent_70%)] blur-3xl" />
+      <div className="absolute bottom-0 left-1/4 hidden md:block h-[30rem] w-[30rem] rounded-full bg-[radial-gradient(circle,oklch(0.32_0.12_20/35%),transparent_70%)] blur-3xl" />
       <div
         className="absolute inset-0 opacity-[0.06] mix-blend-overlay"
         style={{
