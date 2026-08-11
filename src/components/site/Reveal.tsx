@@ -30,7 +30,12 @@ export function Reveal({
       { threshold: 0.12, rootMargin: "0px 0px -60px 0px" },
     );
     io.observe(el);
-    return () => io.disconnect();
+    // Safety net: never leave content hidden (e.g. deep-link jumps).
+    const t = window.setTimeout(() => setVisible(true), 1200);
+    return () => {
+      window.clearTimeout(t);
+      io.disconnect();
+    };
   }, []);
 
   return (
