@@ -92,6 +92,7 @@
   html {
     scroll-behavior: smooth;
     scroll-padding-top: 4.75rem;
+    scrollbar-gutter: stable;
   }
 
   body {
@@ -176,15 +177,8 @@
 }
 
 @utility reveal {
-  opacity: 0;
-  transform: translateY(16px);
-  transition:
-    opacity 0.45s cubic-bezier(0.22, 1, 0.36, 1),
-    transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
-  &[data-visible="true"] {
-    opacity: 1;
-    transform: none;
-  }
+  opacity: 1;
+  transform: none;
 }
 
 @keyframes drift {
