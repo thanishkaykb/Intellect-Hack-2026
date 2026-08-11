@@ -25,8 +25,8 @@ export function ParticleField({ density = 0.00008 }: { density?: number }) {
     let points: P[] = [];
 
     const seed = () => {
-      const max = compact ? 34 : 60;
-      const count = Math.min(max, Math.max(18, Math.floor(width * height * density)));
+      const max = compact ? 26 : 46;
+      const count = Math.min(max, Math.max(14, Math.floor(width * height * density)));
       points = Array.from({ length: count }, () => ({
         x: Math.random() * width,
         y: Math.random() * height,
@@ -54,8 +54,8 @@ export function ParticleField({ density = 0.00008 }: { density?: number }) {
 
     const draw = (now = 0) => {
       if (running && !reduced) raf = requestAnimationFrame(draw);
-      // Cap to ~30fps: plenty for a subtle field, half the CPU.
-      if (!reduced && now - last < 33) return;
+      // A restrained 24fps keeps the background fluid without competing with scrolling.
+      if (!reduced && now - last < 42) return;
       last = now;
 
       ctx.clearRect(0, 0, width, height);
