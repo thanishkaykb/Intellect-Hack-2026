@@ -45,7 +45,7 @@ export function Hero() {
               <MapPin className="text-primary h-4 w-4" aria-hidden="true" />
               <dt className="sr-only">Venue</dt>
               <dd>
-                {EVENT.venue} · {EVENT.college}
+                {EVENT.college}
               </dd>
             </div>
           </dl>

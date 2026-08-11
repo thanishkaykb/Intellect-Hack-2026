@@ -7,7 +7,7 @@ const ICONS = [Trophy, Medal, Award];
 
 export function Prizes() {
   return (
-    <section id="prizes" className="relative scroll-mt-24 py-16 sm:py-20">
+    <section id="prizes" className="relative scroll-mt-28 py-12 sm:py-16">
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
         <SectionHeading
           eyebrow="Rewards"
