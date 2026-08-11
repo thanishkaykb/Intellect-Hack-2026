@@ -13,7 +13,7 @@ export function OnlineRound() {
             aria-hidden="true"
             className="absolute -top-32 -left-24 h-80 w-80 rounded-full bg-[radial-gradient(circle,oklch(0.45_0.17_18/32%),transparent_70%)] blur-2xl"
           />
-          <div className="relative grid gap-10 lg:grid-cols-[1.35fr_1fr] lg:gap-14">
+          <div className="relative grid gap-8 lg:grid-cols-[1.35fr_1fr] lg:items-center lg:gap-14">
             <div className="min-w-0">
               <SectionHeading
                 eyebrow="Phase I"
@@ -32,7 +32,7 @@ export function OnlineRound() {
               </ul>
             </div>
 
-            <div id="template" className="h-fit scroll-mt-24">
+            <div id="template" className="scroll-mt-24 lg:mt-auto lg:self-end lg:pb-2">
             <Reveal
               delay={120}
               className="border-border/70 bg-background/40 rounded-md border p-6"
