@@ -28,11 +28,11 @@ export function Coordinators() {
         />
 
         {/* Staff coordinator */}
-        <Reveal delay={80} className="mx-auto mt-14 max-w-2xl">
-          <div className="glass-panel rounded-lg p-8 text-center">
+        <Reveal delay={80} className="mx-auto mt-10 max-w-2xl">
+          <div className="glass-panel rounded-lg p-6 text-center">
             <p className="text-eyebrow">Staff Coordinator</p>
-            <h3 className="mt-4 text-2xl font-semibold">{STAFF_COORDINATOR.name}</h3>
-            <p className="text-muted-foreground mt-3 text-sm leading-relaxed">
+            <h3 className="mt-3 text-xl font-semibold">{STAFF_COORDINATOR.name}</h3>
+            <p className="text-muted-foreground mt-2 text-sm leading-relaxed">
               {STAFF_COORDINATOR.designation}
               <br />
               {STAFF_COORDINATOR.college}, {STAFF_COORDINATOR.address}
@@ -41,17 +41,17 @@ export function Coordinators() {
         </Reveal>
 
         {/* Student coordinators */}
-        <p className="text-eyebrow mt-16 text-center">Student Coordinators</p>
-        <ul className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <p className="text-eyebrow mt-12 text-center">Student Coordinators</p>
+        <ul className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {STUDENT_COORDINATORS.map((c, i) => (
             <Reveal as="li" key={c.name} delay={i * 80}>
-              <article className="group border-border/70 bg-surface/40 relative h-full overflow-hidden rounded-lg border p-7 backdrop-blur-sm transition-all duration-500 hover:-translate-y-1 hover:border-primary/60 hover:shadow-[0_28px_80px_-50px_oklch(0.6_0.22_22)]">
+              <article className="group border-border/70 bg-surface/40 relative h-full overflow-hidden rounded-lg border p-4 sm:p-5 backdrop-blur-sm transition-all duration-500 hover:-translate-y-1 hover:border-primary/60 hover:shadow-[0_28px_80px_-50px_oklch(0.6_0.22_22)]">
                 <div
                   aria-hidden="true"
                   className="pointer-events-none absolute -top-20 -right-20 h-44 w-44 rounded-full bg-[radial-gradient(circle,oklch(0.5_0.18_18/26%),transparent_70%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100"
                 />
-                <div className="relative flex items-center gap-4">
-                  <div className="border-border/80 bg-background/60 relative h-16 w-16 shrink-0 overflow-hidden rounded-full border">
+                <div className="relative flex items-center gap-3">
+                  <div className="border-border/80 bg-background/60 relative h-12 w-12 shrink-0 overflow-hidden rounded-full border">
                     {c.photo ? (
                       <img
                         src={c.photo}
@@ -61,7 +61,7 @@ export function Coordinators() {
                       />
                     ) : (
                       <span
-                        className="font-display text-primary/80 flex h-full w-full items-center justify-center text-lg font-semibold"
+                        className="font-display text-primary/80 flex h-full w-full items-center justify-center text-base font-semibold"
                         aria-hidden="true"
                       >
                         {initials(c.name)}
@@ -69,8 +69,8 @@ export function Coordinators() {
                     )}
                   </div>
                   <div className="min-w-0">
-                    <h3 className="truncate text-lg font-semibold">{c.name}</h3>
-                    <p className="text-muted-foreground mt-1 flex items-center gap-1.5 text-xs tracking-wide">
+                    <h3 className="truncate text-base font-semibold">{c.name}</h3>
+                    <p className="text-muted-foreground mt-0.5 flex items-center gap-1.5 text-xs tracking-wide">
                       <GraduationCap className="h-3.5 w-3.5" aria-hidden="true" />
                       {c.year} · {c.department}
                     </p>
@@ -78,7 +78,7 @@ export function Coordinators() {
                 </div>
 
 
-                <div className="border-border/60 relative mt-6 flex items-center gap-2 border-t pt-4">
+                <div className="border-border/60 relative mt-3 flex items-center gap-2 border-t pt-3">
                   <Phone className="text-primary h-4 w-4" aria-hidden="true" />
                   {c.phone && c.phone !== PHONE_PLACEHOLDER ? (
                     <a
