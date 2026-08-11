@@ -6,7 +6,7 @@ export function OfflineRound() {
   return (
     <section
       id="finale"
-      className="grain-overlay relative scroll-mt-28 overflow-hidden border-y border-border/60 bg-[image:var(--gradient-wine)] py-14 sm:py-20"
+      className="grain-overlay relative overflow-hidden border-y border-border/60 bg-[image:var(--gradient-wine)] py-12 sm:py-16"
     >
       <ParticleField density={0.00005} />
       <div

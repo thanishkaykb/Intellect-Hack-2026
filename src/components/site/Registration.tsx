@@ -11,7 +11,7 @@ const DETAILS = [
 
 export function Registration() {
   return (
-    <section id="register" className="relative scroll-mt-28 py-12 sm:py-16">
+    <section id="register" className="relative py-10 sm:py-14">
       <div className="mx-auto max-w-6xl px-5 lg:px-8">
         <Reveal className="glass-panel grain-overlay relative overflow-hidden rounded-lg px-7 py-12 text-center sm:px-12 sm:py-16">
           <div

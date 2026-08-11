@@ -15,7 +15,7 @@ export function ProblemStatements() {
   const [active, setActive] = useState<(typeof PROBLEM_STATEMENTS)[number] | null>(null);
 
   return (
-    <section id="problems" className="relative scroll-mt-28 py-12 sm:py-16">
+    <section id="problems" className="relative py-10 sm:py-14">
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
         <SectionHeading
           eyebrow="Phase I topics"

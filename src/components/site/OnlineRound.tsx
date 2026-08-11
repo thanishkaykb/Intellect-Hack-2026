@@ -4,7 +4,7 @@ import { SectionHeading } from "./SectionHeading";
 
 export function OnlineRound() {
   return (
-    <section id="online-round" className="relative scroll-mt-28 py-12 sm:py-16">
+    <section id="online-round" className="relative py-10 sm:py-14">
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
         <div className="glass-panel grain-overlay relative overflow-hidden rounded-lg p-8 sm:p-12 lg:p-16">
           <div
