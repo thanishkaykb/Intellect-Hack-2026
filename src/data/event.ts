@@ -57,6 +57,7 @@ export const EVENT_FACTS = [
   { label: "REGISTRATION FEE", value: "₹200 per Team (if selected)" },
   { label: "ELIGIBILITY", value: "2nd & 3rd year, all departments" },
   { label: "CERTIFICATE", value: "Provided to all participants" },
+  { label: "TRANSPORTATION", value: "Bus will be available from Tambaram" },
   { label: "EVENT TYPE", value: "Inter-College Event" },
 ];
 
