@@ -1,5 +1,5 @@
-import { Download, FileText } from "lucide-react";
-import { ONLINE_ROUND_POINTS, PPT_TEMPLATE_URL } from "@/data/event";
+import { Download, FileText, MessageCircle } from "lucide-react";
+import { ONLINE_ROUND_POINTS, PPT_TEMPLATE_URL, WHATSAPP_GROUP_URL } from "@/data/event";
 import { Cta } from "./Cta";
 import { Reveal } from "./Reveal";
 import { SectionHeading } from "./SectionHeading";
