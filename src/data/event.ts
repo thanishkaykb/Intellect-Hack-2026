@@ -32,15 +32,17 @@ export const EVENT = {
   duration: "6 Hours",
   teamSize: "2–4 Members per Team",
   fee: "₹200 per Team (if selected)",
-  eligibility: "Students from 2nd and 3rd year departments",
+  eligibility: "2nd & 3rd year students, all departments",
+  certificate: "Certificates for all participants",
 };
 
 export const NAV_ITEMS = [
   { label: "Home", href: "#home" },
   { label: "About", href: "#about" },
   { label: "Timeline", href: "#timeline" },
-  { label: "Problem Statements", href: "#problems" },
-  { label: "Grand Finale", href: "#finale" },
+  { label: "Problems", href: "#problems" },
+  { label: "Template", href: "#template" },
+  { label: "Finale", href: "#finale" },
   { label: "Prizes", href: "#prizes" },
   { label: "FAQ", href: "#faq" },
   { label: "Coordinators", href: "#coordinators" },
@@ -53,7 +55,8 @@ export const EVENT_FACTS = [
   { label: "VENUE", value: "Apple Hall" },
   { label: "TEAM SIZE", value: "2–4 Members per Team" },
   { label: "REGISTRATION FEE", value: "₹200 per Team (if selected)" },
-  { label: "ELIGIBILITY", value: "Students from 2nd and 3rd year departments" },
+  { label: "ELIGIBILITY", value: "2nd & 3rd year, all departments" },
+  { label: "CERTIFICATE", value: "Provided to all participants" },
   { label: "EVENT TYPE", value: "Inter-College Event" },
 ];
 
