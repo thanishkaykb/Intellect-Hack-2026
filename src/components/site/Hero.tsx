@@ -1,4 +1,4 @@
-import { ArrowDown, CalendarDays, MapPin } from "lucide-react";
+import { ArrowDown, CalendarDays, MapPin, Award } from "lucide-react";
 import { EVENT } from "@/data/event";
 import { Cta } from "./Cta";
 import { ParticleField } from "./ParticleField";
@@ -57,6 +57,11 @@ export function Hero() {
             <Cta href="#about" variant="outline" size="lg" className="w-full sm:w-auto">
               Explore Event
             </Cta>
+          </div>
+
+          <div className="border-primary/30 bg-primary/10 text-primary inline-flex mt-7 items-center gap-2 rounded-full border px-4 py-2 text-[0.72rem] font-medium tracking-[0.18em] uppercase backdrop-blur-sm">
+            <Award className="h-3.5 w-3.5" aria-hidden="true" />
+            {EVENT.certificate}
           </div>
         </div>
 
