@@ -49,6 +49,11 @@ export function Registration() {
               </p>
             )}
 
+            <p className="text-primary border-primary/30 bg-primary/10 mt-6 inline-flex items-center justify-center gap-2 rounded-full border px-4 py-2 text-xs font-medium tracking-wide backdrop-blur-sm">
+              <Award className="h-3.5 w-3.5" aria-hidden="true" />
+              {EVENT.certificate}
+            </p>
+
             <p className="text-muted-foreground mt-6 font-mono text-[0.7rem] tracking-[0.2em] uppercase">
               Submit your PPT using the official template through the Google Form before 19 September 2026.
             </p>
