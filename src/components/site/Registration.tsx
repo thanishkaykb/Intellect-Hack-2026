@@ -1,3 +1,4 @@
+import { Award } from "lucide-react";
 import { EVENT, REGISTRATION_LINKS } from "@/data/event";
 import { Cta } from "./Cta";
 import { Reveal } from "./Reveal";
@@ -6,7 +7,7 @@ const DETAILS = [
   { label: "Team Size", value: EVENT.teamSize },
   { label: "Registration Fee", value: EVENT.fee },
   { label: "Eligibility", value: EVENT.eligibility },
-  { label: "Event", value: "Inter-College Competition" },
+  { label: "Certificate", value: EVENT.certificate },
 ];
 
 export function Registration() {
