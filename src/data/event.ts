@@ -226,7 +226,7 @@ export const STUDENT_COORDINATORS: Coordinator[] = [
     photo: "",
   },
   {
-    name: "Surya",
+    name: "Surya S",
     year: "II Year",
     department: "CSBS",
     phone: "+91 73389 27172",
