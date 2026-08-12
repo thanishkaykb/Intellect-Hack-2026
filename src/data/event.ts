@@ -10,6 +10,9 @@
 /** Official Google Form for the online preliminary round (PPT submission). */
 export const GOOGLE_FORM_URL = ""; // TODO: add official Google Form URL
 
+/** Official WhatsApp community group for participants. Add the invite link here. */
+export const WHATSAPP_GROUP_URL = ""; // TODO: add official WhatsApp group link
+
 /** Official registration platform links. */
 export const REGISTRATION_LINKS = {
   gform: GOOGLE_FORM_URL, // registration + PPT submission happen on the same Google Form

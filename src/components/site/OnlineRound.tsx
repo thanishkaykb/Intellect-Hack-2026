@@ -1,5 +1,5 @@
-import { Download, FileText } from "lucide-react";
-import { ONLINE_ROUND_POINTS, PPT_TEMPLATE_URL } from "@/data/event";
+import { Download, FileText, MessageCircle } from "lucide-react";
+import { ONLINE_ROUND_POINTS, PPT_TEMPLATE_URL, WHATSAPP_GROUP_URL } from "@/data/event";
 import { Cta } from "./Cta";
 import { Reveal } from "./Reveal";
 import { SectionHeading } from "./SectionHeading";
@@ -60,6 +60,36 @@ export function OnlineRound() {
               {!PPT_TEMPLATE_URL && (
                 <p className="text-muted-foreground mt-3 text-xs">
                   The template file will be published here shortly.
+                </p>
+              )}
+            </Reveal>
+
+            <Reveal
+              delay={180}
+              className="border-border/70 bg-background/40 mt-6 rounded-md border p-6"
+            >
+              <p className="text-eyebrow flex items-center gap-2">
+                <MessageCircle className="text-primary h-3.5 w-3.5" aria-hidden="true" />
+                Stay connected
+              </p>
+              <h3 className="mt-3 text-lg font-semibold">Join our WhatsApp group</h3>
+              <p className="text-muted-foreground mt-2 text-sm leading-relaxed">
+                Join the official Intellect Hack 2026 WhatsApp group for updates, announcements
+                and support throughout the competition.
+              </p>
+              <div className="mt-5">
+                <Cta
+                  href={WHATSAPP_GROUP_URL || undefined}
+                  size="lg"
+                  className="w-full justify-center"
+                >
+                  <MessageCircle className="h-4 w-4" aria-hidden="true" />
+                  Join WhatsApp Group
+                </Cta>
+              </div>
+              {!WHATSAPP_GROUP_URL && (
+                <p className="text-muted-foreground mt-3 text-xs">
+                  The WhatsApp group link will be published here shortly.
                 </p>
               )}
             </Reveal>
