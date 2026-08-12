@@ -44,6 +44,9 @@ export function OfflineRound() {
             Winners are selected based on the overall evaluation of the PowerPoint presentation and
             prototype demonstration.
           </p>
+          <p className="text-muted-foreground mt-3 text-sm">
+            A certificate will be provided to every team selected for the offline round.
+          </p>
         </Reveal>
       </div>
     </section>
