@@ -8,10 +8,10 @@
  */
 
 /** Official Google Form for the online preliminary round (PPT submission). */
-export const GOOGLE_FORM_URL = ""; // TODO: add official Google Form URL
+export const GOOGLE_FORM_URL = "https://forms.gle/6eSchWCgyKgiRTZc6";
 
-/** Official WhatsApp community group for participants. Add the invite link here. */
-export const WHATSAPP_GROUP_URL = ""; // TODO: add official WhatsApp group link
+/** Official WhatsApp community group for participants. */
+export const WHATSAPP_GROUP_URL = "https://chat.whatsapp.com/B9mWdFlDG3Y0aOb9j7xOHX";
 
 /** Official registration platform links. */
 export const REGISTRATION_LINKS = {
