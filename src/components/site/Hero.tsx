@@ -33,7 +33,7 @@ export function Hero() {
           </div>
 
 
-          <h1 className="mt-7 text-[clamp(2.1rem,7.5vw,4.8rem)] leading-[0.92] font-bold tracking-[-0.03em]">
+          <h1 className="mt-5 text-[clamp(2.1rem,7.5vw,4.8rem)] leading-[0.92] font-bold tracking-[-0.03em]">
             <span className="text-gradient-ember block">INTELLECT</span>
             <span className="block">
               HACK <span className="text-primary">2026</span>
@@ -61,7 +61,7 @@ export function Hero() {
             </div>
           </dl>
 
-          <div className="mt-9 flex flex-col items-center justify-center gap-4 sm:flex-row">
+          <div className="mt-7 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Cta href="#register" size="lg" className="w-full sm:w-auto">
               Register Now
             </Cta>
@@ -79,7 +79,7 @@ export function Hero() {
         <a
           href="#about"
           aria-label="Scroll to about section"
-          className="text-muted-foreground hover:text-primary mx-auto mt-16 hidden w-fit items-center gap-2 font-mono text-[0.65rem] tracking-[0.3em] uppercase transition-colors lg:flex"
+          className="text-muted-foreground hover:text-primary mx-auto mt-10 hidden w-fit items-center gap-2 font-mono text-[0.65rem] tracking-[0.3em] uppercase transition-colors lg:flex"
         >
           Scroll <ArrowDown className="h-3.5 w-3.5 animate-bounce" />
         </a>
