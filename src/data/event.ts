@@ -36,7 +36,7 @@ export const EVENT = {
   teamSize: "2–4 Members per Team",
   fee: "₹200 per Team (if selected)",
   eligibility: "2nd & 3rd year students, all departments",
-  certificate: "Certificates for all participants",
+  certificate: "Certificates for teams shortlisted for the offline round",
 };
 
 export const NAV_ITEMS = [
