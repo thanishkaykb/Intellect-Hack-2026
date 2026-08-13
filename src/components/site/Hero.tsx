@@ -1,5 +1,6 @@
 import { ArrowDown, CalendarDays, MapPin, Award } from "lucide-react";
 import { EVENT } from "@/data/event";
+import partnerLogos from "@/assets/partner-logos.png.asset.json";
 import { Cta } from "./Cta";
 import { ParticleField } from "./ParticleField";
 
@@ -7,7 +8,7 @@ export function Hero() {
   return (
     <section
       id="home"
-      className="grain-overlay relative flex min-h-[88svh] items-center overflow-hidden pt-24 pb-16"
+      className="grain-overlay relative flex min-h-[88svh] items-center overflow-hidden pt-20 pb-12"
     >
       <ParticleField />
       <div
@@ -17,12 +18,22 @@ export function Hero() {
 
       <div className="relative mx-auto w-full max-w-7xl px-5 lg:px-8">
         <div className="mx-auto max-w-4xl text-center">
+          <img
+            src={partnerLogos.url}
+            alt="Sri Sairam Engineering College, IEEE Reliability Society and IEEE Madras Section logos"
+            className="mx-auto mb-4 h-8 w-auto object-contain sm:h-10"
+            width={640}
+            height={80}
+            loading="eager"
+            decoding="async"
+          />
           <div className="border-border/80 bg-surface/50 text-eyebrow inline-flex items-center gap-2 rounded-full border px-4 py-2 backdrop-blur-sm">
             <span className="bg-primary h-1.5 w-1.5 animate-pulse rounded-full" />
             {EVENT.organizer}
           </div>
 
-          <h1 className="mt-7 text-[clamp(2.1rem,7.5vw,4.8rem)] leading-[0.92] font-bold tracking-[-0.03em]">
+
+          <h1 className="mt-5 text-[clamp(2.1rem,7.5vw,4.8rem)] leading-[0.92] font-bold tracking-[-0.03em]">
             <span className="text-gradient-ember block">INTELLECT</span>
             <span className="block">
               HACK <span className="text-primary">2026</span>
@@ -50,7 +61,7 @@ export function Hero() {
             </div>
           </dl>
 
-          <div className="mt-9 flex flex-col items-center justify-center gap-4 sm:flex-row">
+          <div className="mt-7 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Cta href="#register" size="lg" className="w-full sm:w-auto">
               Register Now
             </Cta>
@@ -68,7 +79,7 @@ export function Hero() {
         <a
           href="#about"
           aria-label="Scroll to about section"
-          className="text-muted-foreground hover:text-primary mx-auto mt-16 hidden w-fit items-center gap-2 font-mono text-[0.65rem] tracking-[0.3em] uppercase transition-colors lg:flex"
+          className="text-muted-foreground hover:text-primary mx-auto mt-10 hidden w-fit items-center gap-2 font-mono text-[0.65rem] tracking-[0.3em] uppercase transition-colors lg:flex"
         >
           Scroll <ArrowDown className="h-3.5 w-3.5 animate-bounce" />
         </a>

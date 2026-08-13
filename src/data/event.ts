@@ -8,10 +8,10 @@
  */
 
 /** Official Google Form for the online preliminary round (PPT submission). */
-export const GOOGLE_FORM_URL = ""; // TODO: add official Google Form URL
+export const GOOGLE_FORM_URL = "https://forms.gle/6eSchWCgyKgiRTZc6";
 
-/** Official WhatsApp community group for participants. Add the invite link here. */
-export const WHATSAPP_GROUP_URL = ""; // TODO: add official WhatsApp group link
+/** Official WhatsApp community group for participants. */
+export const WHATSAPP_GROUP_URL = "https://chat.whatsapp.com/B9mWdFlDG3Y0aOb9j7xOHX";
 
 /** Official registration platform links. */
 export const REGISTRATION_LINKS = {
@@ -36,7 +36,7 @@ export const EVENT = {
   teamSize: "2–4 Members per Team",
   fee: "₹200 per Team (if selected)",
   eligibility: "2nd & 3rd year students, all departments",
-  certificate: "Certificates for all participants",
+  certificate: "Certificates for teams shortlisted for the offline round",
 };
 
 export const NAV_ITEMS = [
@@ -59,7 +59,7 @@ export const EVENT_FACTS = [
   { label: "TEAM SIZE", value: "2–4 Members per Team" },
   { label: "REGISTRATION FEE", value: "₹200 per Team (if selected)" },
   { label: "ELIGIBILITY", value: "2nd & 3rd year, all departments" },
-  { label: "CERTIFICATE", value: "Provided to all participants" },
+  { label: "CERTIFICATE", value: "For teams shortlisted for the offline round" },
   { label: "TRANSPORTATION", value: "Bus will be available from Tambaram" },
   { label: "EVENT TYPE", value: "Inter-College Event" },
 ];
