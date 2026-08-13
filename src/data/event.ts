@@ -117,14 +117,8 @@ export const TIMELINE = [
   {
     date: "19 SEPTEMBER 2026",
     title: "Submission Deadline",
-    body: "Teams must submit their PowerPoint presentation before the deadline. The presentation should describe:",
-    points: [
-      "Problem understanding",
-      "Proposed solution",
-      "Methodology",
-      "Feasibility",
-      "Expected outcomes",
-    ],
+    body: "Teams must submit their PowerPoint presentation using the official Intellect Hack 2026 template before the deadline.",
+    points: [],
   },
   {
     date: "23 SEPTEMBER 2026",
