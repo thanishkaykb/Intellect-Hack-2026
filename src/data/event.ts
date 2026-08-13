@@ -25,7 +25,7 @@ export const PHONE_PLACEHOLDER = "+91 XXXXX XXXXX";
 
 export const EVENT = {
   name: "INTELLECT HACK 2026",
-  tagline: "AI Hackathon | Competition",
+  tagline: "AI Hackathon | 6 hours",
   motto: "Innovate. Build. Demonstrate.",
   organizer: "IEEE Reliability Society • SEC SBC",
   date: "25 SEPTEMBER 2026",
