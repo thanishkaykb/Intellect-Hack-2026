@@ -1,6 +1,5 @@
 import { ArrowDown, CalendarDays, MapPin, Award } from "lucide-react";
 import { EVENT } from "@/data/event";
-import partnerLogos from "@/assets/partner-logos.png.asset.json";
 import { Cta } from "./Cta";
 import { ParticleField } from "./ParticleField";
 
@@ -19,7 +18,7 @@ export function Hero() {
       <div className="relative mx-auto w-full max-w-7xl px-5 lg:px-8">
         <div className="mx-auto max-w-4xl text-center">
           <img
-            src={partnerLogos.url}
+            src="/partner-logos.png"
             alt="Sri Sairam Engineering College, IEEE Reliability Society and IEEE Madras Section logos"
             className="mx-auto mb-4 h-8 w-auto object-contain sm:h-10"
             width={640}
