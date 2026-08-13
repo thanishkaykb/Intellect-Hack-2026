@@ -1,5 +1,6 @@
 import { ArrowDown, CalendarDays, MapPin, Award } from "lucide-react";
 import { EVENT } from "@/data/event";
+import partnerLogos from "@/assets/partner-logos.png.asset.json";
 import { Cta } from "./Cta";
 import { ParticleField } from "./ParticleField";
 
