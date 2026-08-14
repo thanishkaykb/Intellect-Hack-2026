@@ -44,17 +44,17 @@ export function Hero() {
           </p>
           <p className="text-muted-foreground mt-3 text-base sm:text-lg">{EVENT.motto}</p>
 
-          <dl className="text-muted-foreground mt-8 flex flex-col items-center justify-center gap-3 text-xs tracking-[0.18em] uppercase sm:flex-row sm:gap-8 sm:text-[0.8rem]">
-            <div className="flex items-center gap-2">
+          <dl className="text-muted-foreground mt-8 flex flex-col items-center gap-3 text-xs tracking-[0.18em] uppercase sm:flex-row sm:gap-8 sm:text-[0.8rem]">
+            <div className="flex flex-col items-center gap-1 sm:flex-row sm:gap-2">
               <CalendarDays className="text-primary h-4 w-4 shrink-0" aria-hidden="true" />
               <dt className="sr-only">Date</dt>
               <dd>{EVENT.date}</dd>
             </div>
             <span aria-hidden="true" className="bg-border hidden h-4 w-px sm:block" />
-            <div className="flex items-center gap-2">
+            <div className="flex flex-col items-center gap-1 sm:flex-row sm:gap-2">
               <MapPin className="text-primary h-4 w-4 shrink-0" aria-hidden="true" />
               <dt className="sr-only">Venue</dt>
-              <dd>{EVENT.college}</dd>
+              <dd className="text-center sm:text-left">{EVENT.college}</dd>
             </div>
           </dl>
 
