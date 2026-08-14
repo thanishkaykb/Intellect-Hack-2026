@@ -1,5 +1,5 @@
 import { ArrowDown, CalendarDays, MapPin, Award } from "lucide-react";
-import { EVENT } from "@/data/event";
+import { EVENT, GOOGLE_FORM_URL } from "@/data/event";
 import { Cta } from "./Cta";
 import { ParticleField } from "./ParticleField";
 
@@ -46,17 +46,15 @@ export function Hero() {
 
           <dl className="text-muted-foreground mt-8 flex flex-col items-center justify-center gap-3 text-xs tracking-[0.18em] uppercase sm:flex-row sm:gap-8 sm:text-[0.8rem]">
             <div className="flex items-center gap-2">
-              <CalendarDays className="text-primary h-4 w-4" aria-hidden="true" />
+              <CalendarDays className="text-primary h-4 w-4 shrink-0" aria-hidden="true" />
               <dt className="sr-only">Date</dt>
               <dd>{EVENT.date}</dd>
             </div>
             <span aria-hidden="true" className="bg-border hidden h-4 w-px sm:block" />
-            <div className="flex items-center gap-2 text-center">
-              <MapPin className="text-primary h-4 w-4" aria-hidden="true" />
+            <div className="flex items-center gap-2">
+              <MapPin className="text-primary h-4 w-4 shrink-0" aria-hidden="true" />
               <dt className="sr-only">Venue</dt>
-              <dd>
-                {EVENT.college}
-              </dd>
+              <dd>{EVENT.college}</dd>
             </div>
           </dl>
 
@@ -64,8 +62,8 @@ export function Hero() {
             <Cta href="#register" size="lg" className="w-full sm:w-auto">
               Register Now
             </Cta>
-            <Cta href="#about" variant="outline" size="lg" className="w-full sm:w-auto">
-              Explore Event
+            <Cta href={GOOGLE_FORM_URL} variant="outline" size="lg" className="w-full sm:w-auto">
+              Submit PPT
             </Cta>
           </div>
 

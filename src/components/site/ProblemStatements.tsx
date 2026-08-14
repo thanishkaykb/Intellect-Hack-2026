@@ -28,12 +28,17 @@ export function ProblemStatements() {
           {PROBLEM_STATEMENTS.map((ps, i) => (
             <Reveal as="li" key={ps.no} delay={i * 70}>
               <div className="group border-border/70 bg-surface/40 relative flex flex-col gap-5 overflow-hidden rounded-md border p-6 backdrop-blur-sm transition-all duration-500 hover:border-primary/60 hover:bg-surface-2/40 sm:flex-row sm:items-center sm:gap-8 sm:p-8">
-                <span
-                  aria-hidden="true"
-                  className="font-display text-primary/50 text-3xl leading-none font-bold transition-colors group-hover:text-primary sm:text-4xl"
-                >
-                  {ps.no}
-                </span>
+                <div className="flex flex-col items-center">
+                  <span aria-hidden="true" className="text-eyebrow text-primary/60 mb-1">
+                    Track
+                  </span>
+                  <span
+                    aria-hidden="true"
+                    className="font-display text-primary/50 text-3xl leading-none font-bold transition-colors group-hover:text-primary sm:text-4xl"
+                  >
+                    {ps.no}
+                  </span>
+                </div>
                 <div className="flex-1">
                   <h3 className="text-base font-semibold text-balance sm:text-xl">{ps.title}</h3>
                   <p className="text-muted-foreground mt-2 text-sm leading-relaxed">
