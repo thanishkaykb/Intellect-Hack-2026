@@ -36,7 +36,7 @@ export const EVENT = {
   teamSize: "2–4 Members per Team",
   fee: "₹200 per Team (if selected)",
   eligibility: "2nd & 3rd year students, all departments",
-  certificate: "Certificates for teams shortlisted for the offline round",
+  certificate: "Certificates for both online and offline round",
 };
 
 export const NAV_ITEMS = [
@@ -59,7 +59,7 @@ export const EVENT_FACTS = [
   { label: "TEAM SIZE", value: "2–4 Members per Team" },
   { label: "REGISTRATION FEE", value: "₹200 per Team (if selected)" },
   { label: "ELIGIBILITY", value: "2nd & 3rd year, all departments" },
-  { label: "CERTIFICATE", value: "For teams shortlisted for the offline round" },
+  { label: "CERTIFICATE", value: "For both online and offline round" },
   { label: "TRANSPORTATION", value: "Bus will be available from Tambaram" },
   { label: "EVENT TYPE", value: "Inter-College Event" },
 ];
@@ -115,7 +115,7 @@ export const TIMELINE = [
     points: ["Teams choose one problem statement and prepare their PowerPoint presentation."],
   },
   {
-    date: "19 SEPTEMBER 2026",
+    date: "20 SEPTEMBER 2026",
     title: "Submission Deadline",
     body: "Teams must submit their PowerPoint presentation using the official Intellect Hack 2026 template before the deadline.",
     points: [],
@@ -139,7 +139,7 @@ export const ONLINE_ROUND_POINTS = [
   "Each team must select any ONE problem statement to work on.",
   "Prepare a PowerPoint presentation for the selected problem statement covering problem understanding, proposed solution, methodology, feasibility and expected outcomes.",
   "The presentation must strictly follow the official Intellect Hack 2026 PPT template provided on this website.",
-  "Submit the completed presentation through the official Google Form before 19 September 2026.",
+  "Submit the completed presentation through the official Google Form before 20 September 2026.",
   "The jury panel will evaluate all submissions and shortlisted teams will be informed through email.",
 ];
 

@@ -45,7 +45,7 @@ export function OfflineRound() {
             prototype demonstration.
           </p>
           <p className="text-muted-foreground mt-3 text-sm">
-            A certificate will be provided to every team selected for the offline round.
+            Certificates will be provided for both the online and offline rounds.
           </p>
         </Reveal>
       </div>

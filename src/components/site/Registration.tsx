@@ -1,5 +1,5 @@
 import { Award } from "lucide-react";
-import { EVENT, REGISTRATION_LINKS } from "@/data/event";
+import { EVENT, GOOGLE_FORM_URL, REGISTRATION_LINKS } from "@/data/event";
 import { Cta } from "./Cta";
 import { Reveal } from "./Reveal";
 
@@ -37,9 +37,12 @@ export function Registration() {
               ))}
             </dl>
 
-            <div className="mt-8 flex justify-center">
+            <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
               <Cta href={REGISTRATION_LINKS.gform || undefined} size="lg" className="w-full sm:w-auto">
                 Register on G Form
+              </Cta>
+              <Cta href={GOOGLE_FORM_URL} variant="outline" size="lg" className="w-full sm:w-auto">
+                Submit PPT
               </Cta>
             </div>
 
@@ -55,7 +58,7 @@ export function Registration() {
             </p>
 
             <p className="text-muted-foreground mt-6 font-mono text-[0.7rem] tracking-[0.2em] uppercase">
-              Submit your PPT using the official template through the Google Form before 19 September 2026.
+              Submit your PPT using the official template through the Google Form before 20 September 2026.
             </p>
           </div>
         </Reveal>
