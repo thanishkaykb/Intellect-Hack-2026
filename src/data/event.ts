@@ -147,7 +147,7 @@ export const ONLINE_ROUND_POINTS = [
 ];
 
 /** Official PPT template for the online round. */
-export const PPT_TEMPLATE_URL = "https://canva.link/aj0us83noy0qukyky";
+export const PPT_TEMPLATE_URL = "https://www.canva.com/design/DAHSDAi3oQ0/5tiAN9U_n6iNuEXQ_Sg33w/edit";
 
 export const PROBLEM_STATEMENTS = [
   {
