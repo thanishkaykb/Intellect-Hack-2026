@@ -1,5 +1,5 @@
 import { Download, FileText, MessageCircle, Upload } from "lucide-react";
-import { GOOGLE_FORM_URL, ONLINE_ROUND_POINTS, PPT_TEMPLATE_URL, WHATSAPP_GROUP_URL } from "@/data/event";
+import { ONLINE_ROUND_POINTS, PPT_TEMPLATE_URL, SUBMISSION_FORM_URL, WHATSAPP_GROUP_URL } from "@/data/event";
 import { Cta } from "./Cta";
 import { Reveal } from "./Reveal";
 import { SectionHeading } from "./SectionHeading";
@@ -79,7 +79,7 @@ export function OnlineRound() {
               </p>
               <div className="mt-5">
                 <Cta
-                  href={GOOGLE_FORM_URL}
+                  href={SUBMISSION_FORM_URL || undefined}
                   size="lg"
                   className="w-full justify-center"
                 >
