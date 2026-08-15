@@ -87,6 +87,11 @@ export function OnlineRound() {
                   Submit PPT
                 </Cta>
               </div>
+              {!SUBMISSION_FORM_URL && (
+                <p className="text-muted-foreground mt-3 text-xs">
+                  The submission link will be published here shortly.
+                </p>
+              )}
             </Reveal>
 
             <Reveal
