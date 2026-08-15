@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
-import { GOOGLE_FORM_URL, NAV_ITEMS } from "@/data/event";
+import { NAV_ITEMS, SUBMISSION_FORM_URL } from "@/data/event";
 import { cn } from "@/lib/utils";
 import { Cta } from "./Cta";
 
@@ -57,7 +57,7 @@ export function Navbar() {
         </ul>
 
         <div className="flex items-center gap-3">
-          <Cta href={GOOGLE_FORM_URL} variant="outline" className="hidden md:inline-flex">
+          <Cta href={SUBMISSION_FORM_URL || undefined} variant="outline" className="hidden md:inline-flex">
             Submit PPT
           </Cta>
           <Cta href="#register" className="hidden sm:inline-flex">
@@ -99,7 +99,7 @@ export function Navbar() {
             </Cta>
           </li>
           <li className="pt-3">
-            <Cta href={GOOGLE_FORM_URL} variant="outline" className="w-full" size="lg">
+            <Cta href={SUBMISSION_FORM_URL || undefined} variant="outline" className="w-full" size="lg">
               Submit PPT
             </Cta>
           </li>
