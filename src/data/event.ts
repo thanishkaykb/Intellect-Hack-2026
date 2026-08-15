@@ -10,6 +10,9 @@
 /** Official Google Form for the online preliminary round (PPT submission). */
 export const GOOGLE_FORM_URL = "https://forms.gle/6eSchWCgyKgiRTZc6";
 
+/** Official Google Form for PPT submission (separate from registration). Link coming soon. */
+export const SUBMISSION_FORM_URL = "";
+
 /** Official WhatsApp community group for participants. */
 export const WHATSAPP_GROUP_URL = "https://chat.whatsapp.com/B9mWdFlDG3Y0aOb9j7xOHX";
 
@@ -143,8 +146,8 @@ export const ONLINE_ROUND_POINTS = [
   "The jury panel will evaluate all submissions and shortlisted teams will be informed through email.",
 ];
 
-/** Official PPT template for the online round. Add the file link here. */
-export const PPT_TEMPLATE_URL = ""; // TODO: add official PPT template link
+/** Official PPT template for the online round. */
+export const PPT_TEMPLATE_URL = "https://canva.link/aj0us83noy0qukyky";
 
 export const PROBLEM_STATEMENTS = [
   {
