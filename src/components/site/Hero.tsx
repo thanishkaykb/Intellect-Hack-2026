@@ -46,16 +46,16 @@ export function Hero() {
             Innovate. Build<span className="text-primary">.</span> Demonstrate.
           </p>
 
-          <dl className="text-muted-foreground mt-8 flex flex-col items-center gap-2.5 text-[0.7rem] tracking-[0.18em] uppercase sm:text-[0.8rem]">
-            <div className="flex items-center justify-center gap-2">
+          <dl className="text-muted-foreground mt-8 flex flex-col items-center gap-2.5 text-[0.62rem] tracking-[0.1em] uppercase sm:text-[0.8rem] sm:tracking-[0.18em]">
+            <div className="flex items-center justify-center gap-2 whitespace-nowrap">
               <CalendarDays className="text-primary h-4 w-4 shrink-0" aria-hidden="true" />
               <dt className="sr-only">Date</dt>
               <dd>{EVENT.date}</dd>
             </div>
-            <div className="flex items-center justify-center gap-2">
+            <div className="flex items-center justify-center gap-2 whitespace-nowrap">
               <MapPin className="text-primary h-4 w-4 shrink-0" aria-hidden="true" />
               <dt className="sr-only">Venue</dt>
-              <dd className="text-center">{EVENT.college}</dd>
+              <dd>{EVENT.college}</dd>
             </div>
           </dl>
 
