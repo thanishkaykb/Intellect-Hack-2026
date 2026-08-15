@@ -1,5 +1,5 @@
 import { ArrowDown, CalendarDays, MapPin, Award } from "lucide-react";
-import { EVENT, GOOGLE_FORM_URL } from "@/data/event";
+import { EVENT, SUBMISSION_FORM_URL } from "@/data/event";
 import { Cta } from "./Cta";
 import { ParticleField } from "./ParticleField";
 
@@ -42,19 +42,20 @@ export function Hero() {
           <p className="text-foreground/80 mt-5 font-mono text-[0.72rem] tracking-[0.32em] uppercase sm:text-sm">
             {EVENT.tagline}
           </p>
-          <p className="text-muted-foreground mt-3 text-base sm:text-lg">{EVENT.motto}</p>
+          <p className="text-muted-foreground mt-3 text-base sm:text-lg">
+            Innovate. Build<span className="text-primary">.</span> Demonstrate.
+          </p>
 
-          <dl className="text-muted-foreground mt-8 flex flex-col items-center gap-3 text-xs tracking-[0.18em] uppercase sm:flex-row sm:gap-8 sm:text-[0.8rem]">
-            <div className="flex flex-col items-center gap-1 sm:flex-row sm:gap-2">
+          <dl className="text-muted-foreground mt-8 flex flex-col items-center gap-2.5 text-[0.62rem] tracking-[0.1em] uppercase sm:text-[0.8rem] sm:tracking-[0.18em]">
+            <div className="flex items-center justify-center gap-2 whitespace-nowrap">
               <CalendarDays className="text-primary h-4 w-4 shrink-0" aria-hidden="true" />
               <dt className="sr-only">Date</dt>
               <dd>{EVENT.date}</dd>
             </div>
-            <span aria-hidden="true" className="bg-border hidden h-4 w-px sm:block" />
-            <div className="flex flex-col items-center gap-1 sm:flex-row sm:gap-2">
+            <div className="flex items-center justify-center gap-2 whitespace-nowrap">
               <MapPin className="text-primary h-4 w-4 shrink-0" aria-hidden="true" />
               <dt className="sr-only">Venue</dt>
-              <dd className="text-center sm:text-left">{EVENT.college}</dd>
+              <dd>{EVENT.college}</dd>
             </div>
           </dl>
 
@@ -62,7 +63,7 @@ export function Hero() {
             <Cta href="#register" size="lg" className="w-full sm:w-auto">
               Register Now
             </Cta>
-            <Cta href={GOOGLE_FORM_URL} variant="outline" size="lg" className="w-full sm:w-auto">
+            <Cta href={SUBMISSION_FORM_URL || undefined} variant="outline" size="lg" className="w-full sm:w-auto">
               Submit PPT
             </Cta>
           </div>

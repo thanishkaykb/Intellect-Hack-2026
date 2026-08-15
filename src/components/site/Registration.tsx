@@ -1,5 +1,5 @@
 import { Award } from "lucide-react";
-import { EVENT, GOOGLE_FORM_URL, REGISTRATION_LINKS } from "@/data/event";
+import { EVENT, REGISTRATION_LINKS, SUBMISSION_FORM_URL } from "@/data/event";
 import { Cta } from "./Cta";
 import { Reveal } from "./Reveal";
 
@@ -41,7 +41,7 @@ export function Registration() {
               <Cta href={REGISTRATION_LINKS.gform || undefined} size="lg" className="w-full sm:w-auto">
                 Register on G Form
               </Cta>
-              <Cta href={GOOGLE_FORM_URL} variant="outline" size="lg" className="w-full sm:w-auto">
+              <Cta href={SUBMISSION_FORM_URL || undefined} variant="outline" size="lg" className="w-full sm:w-auto">
                 Submit PPT
               </Cta>
             </div>
