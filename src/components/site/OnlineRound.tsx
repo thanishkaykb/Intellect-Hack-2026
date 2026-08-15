@@ -44,8 +44,9 @@ export function OnlineRound() {
               <h3 className="mt-3 text-lg font-semibold">Use this template only</h3>
               <p className="text-muted-foreground mt-2 text-sm leading-relaxed">
                 All Phase I submissions must be prepared using the official Intellect Hack 2026
-                presentation template and submitted through the Google Form. Submissions in any
-                other format may not be evaluated.
+                presentation template and submitted through the Google Form. Make a copy of the
+                template and use it for your submission. Submissions in any other format may not be
+                evaluated.
               </p>
               <div className="mt-5">
                 <Cta

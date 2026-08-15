@@ -57,11 +57,11 @@ export function Navbar() {
         </ul>
 
         <div className="flex items-center gap-3">
-          <Cta href={SUBMISSION_FORM_URL || undefined} variant="outline" className="hidden md:inline-flex">
-            Submit PPT
-          </Cta>
           <Cta href="#register" className="hidden sm:inline-flex">
             Register Now
+          </Cta>
+          <Cta href={SUBMISSION_FORM_URL || undefined} variant="outline" className="hidden md:inline-flex">
+            Submit PPT
           </Cta>
           <button
             type="button"
