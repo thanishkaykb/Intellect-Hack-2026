@@ -43,7 +43,7 @@ export function Hero() {
             {EVENT.tagline}
           </p>
           <p className="text-muted-foreground mt-3 text-base sm:text-lg">
-            Innovate. Build<span className="text-primary">.</span> Demonstrate.
+            Innovate. <span className="text-primary">Build.</span> Demonstrate.
           </p>
 
           <dl className="text-muted-foreground mt-8 flex flex-col items-center gap-2.5 text-[0.62rem] tracking-[0.1em] uppercase sm:text-[0.8rem] sm:tracking-[0.18em]">
