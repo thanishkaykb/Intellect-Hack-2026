@@ -38,7 +38,7 @@ export function Navbar() {
         <a href="#home" className="group flex items-center gap-3">
           <span className="bg-primary/80 shadow-[0_0_20px_2px_oklch(0.56_0.2_20/70%)] block h-6 w-[3px] rounded-full" />
           <span className="font-display text-sm font-semibold tracking-[0.18em] uppercase">
-            Intellect Hack
+            <span className="text-gradient-ember">Intellect</span> Hack
             <span className="text-primary"> 2026</span>
           </span>
         </a>
