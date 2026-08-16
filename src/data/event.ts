@@ -112,6 +112,12 @@ export const WHY_CARDS = [
 
 export const TIMELINE = [
   {
+    date: "OPEN NOW",
+    title: "Registration Open",
+    body: "Registration for Intellect Hack 2026 is now open. Gather your team, pick a problem statement and register through the official Google Form.",
+    points: ["Open to 2nd & 3rd year students across all departments.", "Teams of 2–4 members."],
+  },
+  {
     date: "11 SEPTEMBER 2026",
     title: "Online Round Begins",
     body: "The event information and Google Form containing the five predefined problem statements will be shared.",
