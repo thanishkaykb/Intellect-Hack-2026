@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
-import { NAV_ITEMS, SUBMISSION_FORM_URL } from "@/data/event";
+import { NAV_ITEMS } from "@/data/event";
 import { cn } from "@/lib/utils";
 import { Cta } from "./Cta";
 
