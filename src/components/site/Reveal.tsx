@@ -6,14 +6,16 @@ export function Reveal({
   className,
   delay: _delay = 0,
   as: Tag = "div",
+  id,
 }: {
   children: ReactNode;
   className?: string;
   delay?: number;
   as?: "div" | "li" | "section" | "article";
+  id?: string;
 }) {
   return (
-    <Tag className={cn("reveal", className)}>
+    <Tag id={id} className={cn("reveal", className)}>
       {children}
     </Tag>
   );

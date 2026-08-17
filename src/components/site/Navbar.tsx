@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
-import { NAV_ITEMS, SUBMISSION_FORM_URL } from "@/data/event";
+import { NAV_ITEMS } from "@/data/event";
 import { cn } from "@/lib/utils";
 import { Cta } from "./Cta";
 
@@ -60,7 +60,7 @@ export function Navbar() {
           <Cta href="#register" className="hidden sm:inline-flex">
             Register Now
           </Cta>
-          <Cta href={SUBMISSION_FORM_URL || undefined} variant="outline" className="hidden md:inline-flex">
+          <Cta href="#submit-ppt" variant="outline" className="hidden md:inline-flex">
             Submit PPT
           </Cta>
           <button
@@ -99,7 +99,7 @@ export function Navbar() {
             </Cta>
           </li>
           <li className="pt-3">
-            <Cta href={SUBMISSION_FORM_URL || undefined} variant="outline" className="w-full" size="lg">
+            <Cta href="#submit-ppt" variant="outline" className="w-full" size="lg">
               Submit PPT
             </Cta>
           </li>

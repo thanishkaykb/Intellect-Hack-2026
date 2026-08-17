@@ -1,5 +1,5 @@
 import { ArrowDown, CalendarDays, MapPin, Award } from "lucide-react";
-import { EVENT, SUBMISSION_FORM_URL } from "@/data/event";
+import { EVENT } from "@/data/event";
 import { Cta } from "./Cta";
 import { ParticleField } from "./ParticleField";
 
@@ -63,7 +63,7 @@ export function Hero() {
             <Cta href="#register" size="lg" className="w-full sm:w-auto">
               Register Now
             </Cta>
-            <Cta href={SUBMISSION_FORM_URL || undefined} variant="outline" size="lg" className="w-full sm:w-auto">
+            <Cta href="#submit-ppt" variant="outline" size="lg" className="w-full sm:w-auto">
               Submit PPT
             </Cta>
           </div>
