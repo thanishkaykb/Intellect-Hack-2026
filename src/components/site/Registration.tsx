@@ -39,7 +39,7 @@ export function Registration() {
 
             <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
               <Cta href={REGISTRATION_LINKS.gform || undefined} size="lg" className="w-full sm:w-auto">
-                Register on G Form
+              Register Your Team
               </Cta>
               <Cta href={SUBMISSION_FORM_URL || undefined} variant="outline" size="lg" className="w-full sm:w-auto">
                 Submit PPT
