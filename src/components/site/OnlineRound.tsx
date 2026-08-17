@@ -66,8 +66,9 @@ export function OnlineRound() {
             </Reveal>
 
             <Reveal
+              id="submit-ppt"
               delay={150}
-              className="border-border/70 bg-background/40 mt-6 rounded-md border p-6"
+              className="border-border/70 bg-background/40 mt-6 scroll-mt-24 rounded-md border p-6"
             >
               <p className="text-eyebrow flex items-center gap-2">
                 <Upload className="text-primary h-3.5 w-3.5" aria-hidden="true" />
