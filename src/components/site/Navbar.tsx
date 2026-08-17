@@ -43,68 +43,87 @@ export function Navbar() {
           </span>
         </a>
 
-        <ul className="hidden items-center gap-6 xl:flex">
-          {NAV_ITEMS.map((item) => (
-            <li key={item.label}>
-              <a
-                href={item.href}
-                className="text-muted-foreground hover:text-foreground relative text-[0.78rem] font-medium tracking-wide transition-colors after:absolute after:-bottom-1.5 after:left-0 after:h-px after:w-0 after:bg-primary after:transition-all hover:after:w-full"
-              >
-                {item.label}
-              </a>
-            </li>
-          ))}
-        </ul>
-
         <div className="flex items-center gap-3">
           <Cta href="#register" className="hidden sm:inline-flex">
             Register Now
           </Cta>
-          <Cta href="#submit-ppt" variant="outline" className="hidden md:inline-flex">
+          <Cta href="#submit-ppt" variant="outline" className="hidden sm:inline-flex">
             Submit PPT
           </Cta>
           <button
             type="button"
             onClick={() => setOpen((v) => !v)}
             aria-expanded={open}
-            aria-controls="mobile-nav"
+            aria-controls="site-nav-panel"
             aria-label={open ? "Close menu" : "Open menu"}
-            className="border-border bg-surface/60 text-foreground inline-flex h-10 w-10 items-center justify-center rounded-sm border xl:hidden"
+            className="border-border bg-surface/60 text-foreground hover:border-primary/60 inline-flex h-10 w-10 items-center justify-center rounded-sm border transition-colors"
           >
             {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
           </button>
         </div>
       </nav>
 
-      <div
-        id="mobile-nav"
-        hidden={!open}
-        className="bg-background/95 border-border/60 border-t backdrop-blur-xl xl:hidden"
+      {open && (
+        <div
+          className="fixed inset-0 z-40 bg-black/60 backdrop-blur-[2px]"
+          onClick={() => setOpen(false)}
+          aria-hidden
+        />
+      )}
+
+      <aside
+        id="site-nav-panel"
+        className={cn(
+          "border-border/60 bg-background/95 fixed top-0 right-0 z-50 h-dvh w-[min(84vw,20rem)] border-l shadow-[0_0_60px_-10px_black] backdrop-blur-xl transition-transform duration-300",
+          open ? "translate-x-0" : "translate-x-full",
+        )}
+        aria-hidden={!open}
       >
-        <ul className="mx-auto flex max-w-7xl flex-col px-5 py-4">
+        <div className="flex h-16 items-center justify-between px-5 sm:h-18">
+          <span className="font-display text-muted-foreground text-[0.7rem] tracking-[0.24em] uppercase">
+            Menu
+          </span>
+          <button
+            type="button"
+            onClick={() => setOpen(false)}
+            aria-label="Close menu"
+            className="border-border bg-surface/60 text-foreground inline-flex h-9 w-9 items-center justify-center rounded-sm border"
+          >
+            <X className="h-4 w-4" />
+          </button>
+        </div>
+        <ul className="flex flex-col overflow-y-auto px-5 pb-8">
           {NAV_ITEMS.map((item) => (
             <li key={item.label}>
               <a
                 href={item.href}
                 onClick={() => setOpen(false)}
-                className="border-border/40 text-foreground/90 hover:text-primary block border-b py-3.5 text-sm tracking-wide"
+                tabIndex={open ? 0 : -1}
+                className="border-border/40 text-foreground/90 hover:text-primary block border-b py-3 text-sm tracking-wide"
               >
                 {item.label}
               </a>
             </li>
           ))}
           <li className="pt-5">
-            <Cta href="#register" className="w-full" size="lg">
+            <Cta href="#register" className="w-full" size="lg" onClick={() => setOpen(false)}>
               Register Now
             </Cta>
           </li>
           <li className="pt-3">
-            <Cta href="#submit-ppt" variant="outline" className="w-full" size="lg">
+            <Cta
+              href="#submit-ppt"
+              variant="outline"
+              className="w-full"
+              size="lg"
+              onClick={() => setOpen(false)}
+            >
               Submit PPT
             </Cta>
           </li>
         </ul>
-      </div>
+      </aside>
+
     </header>
   );
 }
