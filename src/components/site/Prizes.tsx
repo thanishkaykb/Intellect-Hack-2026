@@ -23,11 +23,13 @@ export function Prizes() {
             return (
               <Reveal key={prize.place} delay={i * 110}>
                 <article
-                  className={
-                    isWinner
-                      ? "grain-overlay relative overflow-hidden rounded-lg border border-primary/60 bg-[image:var(--gradient-wine)] p-6 text-center shadow-[0_30px_80px_-50px_oklch(0.6_0.22_22)]"
-                      : "border-primary/60 bg-surface/40 relative h-full overflow-hidden rounded-lg border p-6 text-center backdrop-blur-sm transition-all duration-500 hover:border-primary"
-                  }
+                 className={
+  isWinner
+    ? "grain-overlay relative overflow-hidden rounded-lg border border-primary/60 bg-[image:var(--gradient-wine)] p-6 text-center shadow-[0_30px_80px_-50px_oklch(0.6_0.22_22)]"
+    : prize.rank === 2
+      ? "border-primary/60 bg-surface/40 relative h-full overflow-hidden rounded-lg border p-6 text-center backdrop-blur-sm transition-all duration-500 hover:border-primary"
+      : "border-border/70 bg-surface/40 relative h-full overflow-hidden rounded-lg border p-6 text-center backdrop-blur-sm transition-all duration-500 hover:-translate-y-1 hover:border-primary/50"
+}
                 >
                   {isWinner && (
                     <div
