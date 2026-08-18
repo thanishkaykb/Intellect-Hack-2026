@@ -247,17 +247,17 @@ export const STUDENT_COORDINATORS: Coordinator[] = [
     photo: "",
   },
   {
-    name: "Shabir S",
-    year: "II Year",
-    department: "CSE",
-    phone: "+91 73580 07571",
-    photo: "",
-  },
-  {
     name: "Ramya S",
     year: "III Year",
     department: "ECE",
     phone: "+91 63796 01275",
+    photo: "",
+  },
+  {
+    name: "Shabir S",
+    year: "II Year",
+    department: "CSE",
+    phone: "+91 73580 07571",
     photo: "",
   },
   {
