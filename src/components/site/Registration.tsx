@@ -1,5 +1,5 @@
 import { Award } from "lucide-react";
-import { EVENT, REGISTRATION_LINKS, SUBMISSION_FORM_URL } from "@/data/event";
+import { EVENT, REGISTRATION_LINKS } from "@/data/event";
 import { Cta } from "./Cta";
 import { Reveal } from "./Reveal";
 
@@ -37,14 +37,11 @@ export function Registration() {
               ))}
             </dl>
 
-            <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
-              <Cta href={REGISTRATION_LINKS.gform || undefined} size="lg" className="w-full sm:w-auto">
-              Register Your Team
-              </Cta>
-              <Cta href={SUBMISSION_FORM_URL || undefined} variant="outline" size="lg" className="w-full sm:w-auto">
-                Submit PPT
-              </Cta>
-            </div>
+         <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
+  <Cta href={REGISTRATION_LINKS.gform || undefined} size="lg" className="w-full sm:w-auto">
+    Register Your Team
+  </Cta>
+</div>
 
             {!REGISTRATION_LINKS.gform && (
               <p className="text-muted-foreground mt-5 text-xs">
