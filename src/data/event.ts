@@ -194,7 +194,7 @@ export const PRIZES = [
   { place: "SECOND RUNNER-UP", amount: "₹750", rank: 3 },
 ];
 
-export const ADVISOR_COORDINATOR = {
+export const ADVISOR = {
   title: "Advisor - IEEE Reliability Society",
   name: "Dr. A. Naresh Kumar",
   designation: "Head of Department - Computer Science and Business Systems",
