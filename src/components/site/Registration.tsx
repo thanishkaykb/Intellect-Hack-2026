@@ -37,9 +37,13 @@ export function Registration() {
               ))}
             </dl>
 
-         <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
-  <Cta href={REGISTRATION_LINKS.gform || undefined} size="lg" className="w-full sm:w-auto">
-    Register Your Team
+<div className="mt-8 flex justify-center">
+  <Cta
+    href={REGISTRATION_LINKS.gform || undefined}
+    size="lg"
+    className="w-full sm:w-auto"
+  >
+    Register Team & Submit PPT
   </Cta>
 </div>
 
