@@ -59,14 +59,11 @@ export function Hero() {
             </div>
           </dl>
 
-          <div className="mt-7 flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <Cta href="#register" size="lg" className="w-full sm:w-auto">
-              Register Now
-            </Cta>
-            <Cta href="#submit-ppt" variant="outline" size="lg" className="w-full sm:w-auto">
-              Submit PPT
-            </Cta>
-          </div>
+         <div className="mt-7 flex items-center justify-center">
+  <Cta href="#register" size="lg" className="w-full sm:w-auto">
+    Register Team, and Submit PPT
+  </Cta>
+</div>
 
           <div className="border-primary/30 bg-primary/10 text-primary inline-flex mt-7 items-center gap-2 rounded-full border px-4 py-2 text-[0.72rem] font-medium tracking-[0.18em] uppercase backdrop-blur-sm">
             <Award className="h-3.5 w-3.5" aria-hidden="true" />
