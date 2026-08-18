@@ -30,7 +30,7 @@ export function Coordinators() {
 
         {/* Advisor */}
 <Reveal delay={80} className="mx-auto mt-10 max-w-2xl">
-  <div className="glass-panel border-primary rounded-lg border p-6 text-center">
+  <div className="glass-panel !border !border-primary rounded-lg p-6 text-center">
     <p className="text-eyebrow">Advisor - IEEE Reliability Society</p>
     <h3 className="mt-3 text-xl font-semibold">{ADVISOR.name}</h3>
     <p className="text-muted-foreground mt-2 text-sm leading-relaxed">
