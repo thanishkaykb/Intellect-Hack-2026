@@ -197,7 +197,7 @@ export const PRIZES = [
 export const ADVISOR = {
   title: "Advisor - IEEE Reliability Society",
   name: "Dr. A. Naresh Kumar",
-  designation: "Head of Department - Computer Science and Business Systems",
+  designation: "Head of the Department - Computer Science and Business Systems",
   college: "Sri Sairam Engineering College",
   address: "Chennai - 44",
 };
