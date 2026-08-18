@@ -194,6 +194,14 @@ export const PRIZES = [
   { place: "SECOND RUNNER-UP", amount: "₹750", rank: 3 },
 ];
 
+export const ADVISOR_COORDINATOR = {
+  title: "Advisor - IEEE Reliability Society",
+  name: "Dr. A. Naresh Kumar",
+  designation: "Head of Department - Computer Science and Business Systems",
+  college: "Sri Sairam Engineering College",
+  address: "Chennai - 44",
+};
+
 export const STAFF_COORDINATOR = {
   name: "Mr. D. Prabhu",
   designation: "Assistant Professor – Computer Science and Business Systems",
