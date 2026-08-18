@@ -44,7 +44,7 @@ export const NAV_ITEMS = [
   { label: "About", href: "#about" },
   { label: "Timeline", href: "#timeline" },
   { label: "Problem Statement", href: "#problems" },
-  { label: "PPT Template & Submission", href: "#template" },
+  { label: "PPT Template", href: "#template" },
   { label: "Grand Finale", href: "#finale" },
   { label: "Prizes", href: "#prizes" },
   { label: "FAQ", href: "#faq" },
