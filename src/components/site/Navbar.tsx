@@ -43,13 +43,10 @@ export function Navbar() {
           </span>
         </a>
 
-        <div className="flex items-center gap-3">
-          <Cta href="#register" className="hidden sm:inline-flex">
-            Register Now
-          </Cta>
-          <Cta href="#submit-ppt" variant="outline" className="hidden sm:inline-flex">
-            Submit PPT
-          </Cta>
+       <div className="flex items-center gap-3">
+  <Cta href="#register" className="hidden sm:inline-flex">
+    Register Team & Submit PPT
+  </Cta>
           <button
             type="button"
             onClick={() => setOpen((v) => !v)}
@@ -105,22 +102,11 @@ export function Navbar() {
               </a>
             </li>
           ))}
-          <li className="pt-5">
-            <Cta href="#register" className="w-full" size="lg" onClick={() => setOpen(false)}>
-              Register Now
-            </Cta>
-          </li>
-          <li className="pt-3">
-            <Cta
-              href="#submit-ppt"
-              variant="outline"
-              className="w-full"
-              size="lg"
-              onClick={() => setOpen(false)}
-            >
-              Submit PPT
-            </Cta>
-          </li>
+   <li className="pt-5">
+  <Cta href="#register" className="w-full" size="lg" onClick={() => setOpen(false)}>
+    Register Team & Submit PPT
+  </Cta>
+</li>
         </ul>
       </aside>
 
