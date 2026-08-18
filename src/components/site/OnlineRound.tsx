@@ -1,5 +1,5 @@
-import { Download, FileText, MessageCircle, Upload } from "lucide-react";
-import { ONLINE_ROUND_POINTS, PPT_TEMPLATE_URL, SUBMISSION_FORM_URL, WHATSAPP_GROUP_URL } from "@/data/event";
+import { Download, FileText, MessageCircle } from "lucide-react";
+import { ONLINE_ROUND_POINTS, PPT_TEMPLATE_URL, WHATSAPP_GROUP_URL } from "@/data/event";
 import { Cta } from "./Cta";
 import { Reveal } from "./Reveal";
 import { SectionHeading } from "./SectionHeading";
@@ -61,37 +61,6 @@ export function OnlineRound() {
               {!PPT_TEMPLATE_URL && (
                 <p className="text-muted-foreground mt-3 text-xs">
                   The template file will be published here shortly.
-                </p>
-              )}
-            </Reveal>
-
-            <Reveal
-              id="submit-ppt"
-              delay={150}
-              className="border-border/70 bg-background/40 mt-6 scroll-mt-24 rounded-md border p-6"
-            >
-              <p className="text-eyebrow flex items-center gap-2">
-                <Upload className="text-primary h-3.5 w-3.5" aria-hidden="true" />
-                PPT Submission
-              </p>
-              <h3 className="mt-3 text-lg font-semibold">Submit your PPT</h3>
-              <p className="text-muted-foreground mt-2 text-sm leading-relaxed">
-                This is the official Google Form to submit your PowerPoint presentation. The form
-                opens on 11 September 2026 and closes on 20 September 2026.
-              </p>
-              <div className="mt-5">
-                <Cta
-                  href={SUBMISSION_FORM_URL || undefined}
-                  size="lg"
-                  className="w-full justify-center"
-                >
-                  <Upload className="h-4 w-4" aria-hidden="true" />
-                  Submit PPT
-                </Cta>
-              </div>
-              {!SUBMISSION_FORM_URL && (
-                <p className="text-muted-foreground mt-3 text-xs">
-                  The submission link will be published here shortly.
                 </p>
               )}
             </Reveal>
