@@ -56,12 +56,6 @@ export function Prizes() {
             );
           })}
         </div>
-
-        <Reveal delay={120} className="mt-6 text-center">
-          <p className="text-muted-foreground text-sm tracking-wide">
-            Certificates will be provided.
-          </p>
-        </Reveal>
       </div>
     </section>
   );
