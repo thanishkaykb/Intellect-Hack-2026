@@ -61,7 +61,7 @@ export function Hero() {
 
          <div className="mt-7 flex items-center justify-center">
   <Cta href="#register" size="lg" className="w-full sm:w-auto">
-    Register Team, and Submit PPT
+    Register Team & Submit PPT
   </Cta>
 </div>
 
