@@ -1,6 +1,7 @@
 import { Phone, GraduationCap } from "lucide-react";
 import {
   PHONE_PLACEHOLDER,
+  ADVISOR,
   STAFF_COORDINATOR,
   STUDENT_COORDINATORS,
 } from "@/data/event";
@@ -27,18 +28,31 @@ export function Coordinators() {
           align="center"
         />
 
-        {/* Staff coordinator */}
-        <Reveal delay={80} className="mx-auto mt-10 max-w-2xl">
-          <div className="glass-panel rounded-lg p-6 text-center">
-            <p className="text-eyebrow">Staff Coordinator</p>
-            <h3 className="mt-3 text-xl font-semibold">{STAFF_COORDINATOR.name}</h3>
-            <p className="text-muted-foreground mt-2 text-sm leading-relaxed">
-              {STAFF_COORDINATOR.designation}
-              <br />
-              {STAFF_COORDINATOR.college}, {STAFF_COORDINATOR.address}
-            </p>
-          </div>
-        </Reveal>
+        {/* Advisor */}
+<Reveal delay={80} className="mx-auto mt-10 max-w-2xl">
+  <div className="glass-panel rounded-lg p-6 text-center">
+    <p className="text-eyebrow">Advisor - IEEE Reliability Society</p>
+    <h3 className="mt-3 text-xl font-semibold">{ADVISOR.name}</h3>
+    <p className="text-muted-foreground mt-2 text-sm leading-relaxed">
+      {ADVISOR.designation}
+      <br />
+      {ADVISOR.college}, {ADVISOR.address}
+    </p>
+  </div>
+</Reveal>
+
+{/* Staff coordinator */}
+<Reveal delay={160} className="mx-auto mt-6 max-w-2xl">
+  <div className="glass-panel rounded-lg p-6 text-center">
+    <p className="text-eyebrow">Staff Coordinator</p>
+    <h3 className="mt-3 text-xl font-semibold">{STAFF_COORDINATOR.name}</h3>
+    <p className="text-muted-foreground mt-2 text-sm leading-relaxed">
+      {STAFF_COORDINATOR.designation}
+      <br />
+      {STAFF_COORDINATOR.college}, {STAFF_COORDINATOR.address}
+    </p>
+  </div>
+</Reveal>
 
         {/* Student coordinators */}
         <p className="text-eyebrow mt-12 text-center">Student Coordinators</p>
