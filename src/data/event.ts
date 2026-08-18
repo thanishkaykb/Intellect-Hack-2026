@@ -10,9 +10,6 @@
 /** Official Google Form for the online preliminary round (PPT submission). */
 export const GOOGLE_FORM_URL = "https://forms.gle/6eSchWCgyKgiRTZc6";
 
-/** Official Google Form for PPT submission (separate from registration). Link coming soon. */
-export const SUBMISSION_FORM_URL = "";
-
 /** Official WhatsApp community group for participants. */
 export const WHATSAPP_GROUP_URL = "https://chat.whatsapp.com/B9mWdFlDG3Y0aOb9j7xOHX";
 
@@ -63,7 +60,6 @@ export const EVENT_FACTS = [
   { label: "REGISTRATION FEE", value: "₹200 per Team (if selected)" },
   { label: "ELIGIBILITY", value: "2nd & 3rd year, all departments" },
   { label: "CERTIFICATE", value: "For both online and offline round" },
-  { label: "TRANSPORTATION", value: "Bus will be available from Tambaram" },
   { label: "EVENT TYPE", value: "Inter-College Event" },
 ];
 
@@ -111,12 +107,6 @@ export const WHY_CARDS = [
 ] as const;
 
 export const TIMELINE = [
-  {
-    date: "OPEN NOW",
-    title: "Registration Open",
-    body: "Registration for Intellect Hack 2026 is now open. Gather your team, pick a problem statement and register through the official Google Form.",
-    points: ["Open to 2nd & 3rd year students across all departments.", "Teams of 2–4 members."],
-  },
   {
     date: "11 SEPTEMBER 2026",
     title: "Online Round Begins",
