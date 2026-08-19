@@ -30,15 +30,16 @@ export function Coordinators() {
 
 {/* Advisor */}
 <Reveal delay={80} className="mx-auto mt-10 max-w-2xl">
-  <div className="glass-panel relative overflow-hidden rounded-lg border border-primary p-6 text-center">
-    {/* Soft red glow behind the advisor box */}
+  <div className="glass-panel relative overflow-hidden rounded-lg !border !border-primary/80 p-6 text-center shadow-[0_0_35px_-20px_oklch(0.55_0.2_20/80%)]">
     <div
       aria-hidden="true"
-      className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,oklch(0.55_0.2_20/18%),transparent_70%)] blur-2xl"
+      className="pointer-events-none absolute inset-0 z-0 bg-[radial-gradient(ellipse_at_center,oklch(0.55_0.2_20/22%),transparent_68%)]"
     />
 
-    <div className="relative">
-      <p className="text-eyebrow">Advisor - IEEE Reliability Society</p>
+    <div className="relative z-10">
+      <p className="text-eyebrow">
+        Advisor - IEEE Reliability Society
+      </p>
 
       <h3 className="mt-3 text-xl font-semibold">
         {ADVISOR.name}
@@ -55,8 +56,10 @@ export function Coordinators() {
 
 {/* Staff coordinator */}
 <Reveal delay={160} className="mx-auto mt-6 max-w-2xl">
-  <div className="glass-panel rounded-lg border border-primary p-6 text-center">
-    <p className="text-eyebrow">Staff Coordinator</p>
+  <div className="glass-panel rounded-lg !border !border-primary/80 p-6 text-center">
+    <p className="text-eyebrow">
+      Staff Coordinator
+    </p>
 
     <h3 className="mt-3 text-xl font-semibold">
       {STAFF_COORDINATOR.name}
