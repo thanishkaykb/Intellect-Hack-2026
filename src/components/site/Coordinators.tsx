@@ -28,24 +28,40 @@ export function Coordinators() {
           align="center"
         />
 
-        {/* Advisor */}
+{/* Advisor */}
 <Reveal delay={80} className="mx-auto mt-10 max-w-2xl">
-  <div className="glass-panel !border !border-primary rounded-lg p-6 text-center">
-    <p className="text-eyebrow">Advisor - IEEE Reliability Society</p>
-    <h3 className="mt-3 text-xl font-semibold">{ADVISOR.name}</h3>
-    <p className="text-muted-foreground mt-2 text-sm leading-relaxed">
-      {ADVISOR.designation}
-      <br />
-      {ADVISOR.college}, {ADVISOR.address}
-    </p>
+  <div className="glass-panel relative overflow-hidden rounded-lg border border-primary p-6 text-center">
+    {/* Soft red glow behind the advisor box */}
+    <div
+      aria-hidden="true"
+      className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,oklch(0.55_0.2_20/18%),transparent_70%)] blur-2xl"
+    />
+
+    <div className="relative">
+      <p className="text-eyebrow">Advisor - IEEE Reliability Society</p>
+
+      <h3 className="mt-3 text-xl font-semibold">
+        {ADVISOR.name}
+      </h3>
+
+      <p className="text-muted-foreground mt-2 text-sm leading-relaxed">
+        {ADVISOR.designation}
+        <br />
+        {ADVISOR.college}, {ADVISOR.address}
+      </p>
+    </div>
   </div>
 </Reveal>
 
 {/* Staff coordinator */}
 <Reveal delay={160} className="mx-auto mt-6 max-w-2xl">
-  <div className="glass-panel rounded-lg p-6 text-center">
+  <div className="glass-panel rounded-lg border border-primary p-6 text-center">
     <p className="text-eyebrow">Staff Coordinator</p>
-    <h3 className="mt-3 text-xl font-semibold">{STAFF_COORDINATOR.name}</h3>
+
+    <h3 className="mt-3 text-xl font-semibold">
+      {STAFF_COORDINATOR.name}
+    </h3>
+
     <p className="text-muted-foreground mt-2 text-sm leading-relaxed">
       {STAFF_COORDINATOR.designation}
       <br />
