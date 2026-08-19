@@ -8,9 +8,8 @@ export function Footer() {
           <div className="flex items-center gap-3">
             <span className="bg-primary/80 block h-5 w-[3px] shrink-0 rounded-full shadow-[0_0_20px_2px_oklch(0.56_0.2_20/70%)]" />
             <span className="font-display text-xs font-semibold tracking-[0.18em] uppercase">
-              Intellect Hack<span className="text-primary"> 2026</span>
-            </span>
-          </div>
+  <span className="text-primary">Intellect</span> Hack<span className="text-primary"> 2026</span>
+</span>
 
           <nav aria-label="Footer" className="w-full">
             <ul className="flex flex-wrap justify-center gap-x-5 gap-y-2">
