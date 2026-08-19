@@ -32,10 +32,9 @@ export function Coordinators() {
 <Reveal delay={80} className="mx-auto mt-10 max-w-2xl">
   <div className="glass-panel relative overflow-hidden rounded-lg !border !border-primary/80 p-6 text-center shadow-[0_0_35px_-20px_oklch(0.55_0.2_20/80%)]">
     <div
-      aria-hidden="true"
-      className="pointer-events-none absolute inset-0 z-0 bg-[radial-gradient(ellipse_at_center,oklch(0.55_0.2_20/22%),transparent_68%)]"
-    />
-
+  aria-hidden="true"
+  className="pointer-events-none absolute -inset-8 z-0 bg-[radial-gradient(ellipse_at_center,oklch(0.55_0.2_20/28%),transparent_70%)] blur-2xl"
+/>
     <div className="relative z-10">
       <p className="text-eyebrow">
         Advisor - IEEE Reliability Society
