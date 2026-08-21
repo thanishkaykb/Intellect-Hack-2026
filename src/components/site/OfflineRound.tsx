@@ -22,7 +22,7 @@ export function OfflineRound() {
             GRAND FINALE
           </h2>
           <p className="text-foreground/80 mt-6 font-mono text-xs tracking-[0.28em] uppercase sm:text-sm">
-            25 September 2026 · Apple Hall · Sri Sairam Engineering College
+            23 September 2026 · Apple Hall · Sri Sairam Engineering College
           </p>
         </Reveal>
 
