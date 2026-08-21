@@ -28,7 +28,7 @@ export const EVENT = {
   tagline: "AI Hackathon | 6 hours",
   motto: "Innovate. Build. Demonstrate.",
   organizer: "IEEE Reliability Society • SEC SBC",
-  date: "25 SEPTEMBER 2026",
+  date: "23 SEPTEMBER 2026",
   venue: "APPLE HALL",
   location: "SRI SAIRAM ENGINEERING COLLEGE, CHENNAI",
   college: "SRI SAIRAM ENGINEERING COLLEGE, CHENNAI",
@@ -107,25 +107,25 @@ export const WHY_CARDS = [
 
 export const TIMELINE = [
   {
-    date: "11 SEPTEMBER 2026",
+    date: "21 AUGUST 2026",
     title: "Online Round Begins",
     body: "The event information and Google Form containing the five predefined problem statements will be shared.",
     points: ["Teams choose one problem statement and prepare their PowerPoint presentation."],
   },
   {
-    date: "20 SEPTEMBER 2026",
+    date: "15 SEPTEMBER 2026",
     title: "Submission Deadline",
     body: "Teams must submit their PowerPoint presentation using the official Intellect Hack 2026 template before the deadline.",
     points: [],
   },
   {
-    date: "23 SEPTEMBER 2026",
+    date: "19 SEPTEMBER 2026",
     title: "Shortlisted Teams Announced",
     body: "Shortlisted teams will be announced and communication will be sent through email.",
     points: [],
   },
   {
-    date: "25 SEPTEMBER 2026",
+    date: "23 SEPTEMBER 2026",
     title: "Offline Grand Finale",
     body: "Selected teams report at Apple Hall, Sri Sairam Engineering College. The offline competition takes place for 6 hours.",
     points: [],
