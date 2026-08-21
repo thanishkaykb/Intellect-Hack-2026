@@ -54,7 +54,7 @@ export const NAV_ITEMS = [
 export const EVENT_FACTS = [
   { label: "EVENT TYPE", value: "Competition / AI Hackathon" },
   { label: "DURATION", value: "6 Hours" },
-  { label: "DATE", value: "25 September 2026" },
+  { label: "DATE", value: "23 September 2026" },
   { label: "VENUE", value: "Apple Hall" },
   { label: "TEAM SIZE", value: "2–4 Members per Team" },
   { label: "REGISTRATION FEE", value: "₹200 per Team (if selected)" },
@@ -137,7 +137,7 @@ export const ONLINE_ROUND_POINTS = [
   "Each team must select any ONE problem statement to work on.",
   "Prepare a PowerPoint presentation for the selected problem statement covering problem understanding, proposed solution, methodology, feasibility and expected outcomes.",
   "The presentation must strictly follow the official Intellect Hack 2026 PPT template provided on this website.",
-  "Submit the completed presentation through the official Google Form before 20 September 2026.",
+  "Submit the completed presentation through the official Google Form before 15 September 2026.",
   "The jury panel will evaluate all submissions and shortlisted teams will be informed through email.",
 ];
 
