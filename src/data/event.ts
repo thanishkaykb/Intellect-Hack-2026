@@ -107,7 +107,7 @@ export const WHY_CARDS = [
 
 export const TIMELINE = [
   {
-    date: "21 AUGUST 2026",
+    date: "22 AUGUST 2026",
     title: "Online Round Begins",
     body: "The event information and Google Form containing the five predefined problem statements will be shared.",
     points: ["Teams choose one problem statement and prepare their PowerPoint presentation."],
