@@ -290,7 +290,7 @@ export const FAQS = [
   },
   {
     q: "When will shortlisted teams be announced?",
-    a: "Shortlisted teams will be announced on 23 September 2026 and informed through email.",
+    a: "Shortlisted teams will be announced on 19 September 2026 and informed through email.",
   },
 ];
 
