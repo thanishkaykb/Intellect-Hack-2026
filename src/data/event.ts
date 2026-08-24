@@ -273,7 +273,7 @@ export const STUDENT_COORDINATORS: Coordinator[] = [
 export const FAQS = [
   {
     q: "Who can participate?",
-    a: "Students from 2nd and 3rd year departments. Intellect Hack 2026 is an inter-college competition.",
+    a: "Students from 2nd, 3rd & 4th year, any departments. Intellect Hack 2026 is an inter-college competition.",
   },
   { q: "How many members can be in a team?", a: "Each team must have 2–4 members." },
   {
