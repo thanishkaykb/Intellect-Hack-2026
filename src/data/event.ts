@@ -35,7 +35,7 @@ export const EVENT = {
   duration: "6 Hours",
   teamSize: "2–4 Members per Team",
   fee: "₹200 per Team (if selected)",
-  eligibility: "2nd & 3rd year students, all departments",
+  eligibility: "2nd, 3rd & 4th year students, all departments",
   certificate: "Certificates for both online and offline round",
 };
 
@@ -58,7 +58,7 @@ export const EVENT_FACTS = [
   { label: "VENUE", value: "Apple Hall" },
   { label: "TEAM SIZE", value: "2–4 Members per Team" },
   { label: "REGISTRATION FEE", value: "₹200 per Team (if selected)" },
-  { label: "ELIGIBILITY", value: "2nd & 3rd year, all departments" },
+  { label: "ELIGIBILITY", value: "2nd, 3rd & 4th year students, all departments" },
   { label: "EVENT TYPE", value: "Inter-College Event" },
 ];
 
