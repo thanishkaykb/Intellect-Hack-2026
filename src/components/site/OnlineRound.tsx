@@ -18,7 +18,7 @@ export function OnlineRound() {
               <SectionHeading
                 eyebrow="Phase I"
                 title="Online Preliminary Round"
-                description="23 August 2026 — 15 September 2026"
+                description="23 August 2026 — 7 September 2026"
               />
               <ul className="mt-6 space-y-3.5">
                 {ONLINE_ROUND_POINTS.map((point, i) => (
