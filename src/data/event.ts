@@ -11,7 +11,7 @@
 export const GOOGLE_FORM_URL = "https://forms.gle/6eSchWCgyKgiRTZc6";
 
 /** Official WhatsApp community group for participants. */
-export const WHATSAPP_GROUP_URL = "https://chat.whatsapp.com/B9mWdFlDG3Y0aOb9j7xOHX";
+export const WHATSAPP_GROUP_URL = "https://chat.whatsapp.com/FIj1eHTejVzAxyKJICv2RC?s=sh&p=a&mlu=4";
 
 /** Official registration platform links. */
 export const REGISTRATION_LINKS = {
