@@ -59,7 +59,7 @@ export function Registration() {
             </p>
 
             <p className="text-muted-foreground mt-6 font-mono text-[0.7rem] tracking-[0.2em] uppercase">
-              Submit your PPT using the official template through the Google Form before 20 September 2026.
+              Submit your PPT using the official template through the Google Form before 8 September 2026.
             </p>
           </div>
         </Reveal>
