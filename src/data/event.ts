@@ -113,13 +113,13 @@ export const TIMELINE = [
     points: ["Teams choose one problem statement and prepare their PowerPoint presentation."],
   },
   {
-    date: "7 SEPTEMBER 2026",
+    date: "8 SEPTEMBER 2026",
     title: "Submission Deadline",
     body: "Teams must submit their PowerPoint presentation using the official Intellect Hack 2026 template before the deadline.",
     points: [],
   },
   {
-    date: "19 SEPTEMBER 2026",
+    date: "11 SEPTEMBER 2026",
     title: "Shortlisted Teams Announced",
     body: "Shortlisted teams will be announced and communication will be sent through email.",
     points: [],
@@ -137,7 +137,7 @@ export const ONLINE_ROUND_POINTS = [
   "Each team must select any ONE problem statement to work on.",
   "Prepare a PowerPoint presentation for the selected problem statement covering problem understanding, proposed solution, methodology, feasibility and expected outcomes.",
   "The presentation must strictly follow the official Intellect Hack 2026 PPT template provided on this website.",
-  "Submit the completed presentation through the official Google Form before 7 September 2026.",
+  "Submit the completed presentation through the official Google Form before 8 September 2026.",
   "The jury panel will evaluate all submissions and shortlisted teams will be informed through email.",
 ];
 
@@ -290,7 +290,7 @@ export const FAQS = [
   },
   {
     q: "When will shortlisted teams be announced?",
-    a: "Shortlisted teams will be announced on 19 September 2026 and informed through email.",
+    a: "Shortlisted teams will be announced on 11 September 2026 and informed through email.",
   },
 ];
 
